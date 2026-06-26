@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== Dynamic SEO Meta Tags (Updated per page via JS) ===== -->
+    <title>AfterSolves</title>
+    <meta name="description" content="AfterSolves builds modern websites, SaaS products, and AI systems that scale. Partner with our senior engineering team focused on performance, automation, and precision.">
+    <meta name="keywords" content="AfterSolves, AI web development, SaaS development, AI systems, UI/UX design, web design, web development, Malaysia Website, Website Murah Malaysia, Website Murah Sungai Petani, Website Area Kedah, Website murah kedah, website designer malaysia, web murah">
+    <meta name="author" content="AfterSolves">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- ===== Open Graph / Facebook ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AfterSolves">
+    <meta property="og:title" content="AfterSolves">
+    <meta property="og:description" content="AfterSolves builds modern websites, SaaS products, and AI systems that scale.">
+    <meta property="og:url" content="https://aftersolves.com">
+    <meta property="og:image" content="https://aftersolves.com/og-image.png">
+    
+    <!-- ===== Twitter Card ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AfterSolves">
+    <meta name="twitter:description" content="AfterSolves builds modern websites, SaaS products, and AI systems that scale.">
+    <meta name="twitter:image" content="https://aftersolves.com/og-image.png">
+    
+    <!-- ===== Canonical Link ===== -->
+    <link rel="canonical" href="https://aftersolves.com">
+    
+    <!-- ===== Favicon ===== -->
+    <link rel="icon" type="image/png" href="https://images.luviio.com/After-Solves-04.png">
+    
+    <!-- ===== Structured Data (JSON-LD) ===== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "AfterSolves",
+        "alternateName": "aftersolves.com",
+        "url": "https://aftersolves.com",
+        "logo": "https://aftersolves.com/logo.png",
+        "description": "AfterSolves builds modern websites, SaaS products, and AI systems that scale.",
+        "sameAs": [
+            "https://instagram.com",
+            "https://x.com",
+            "https://tiktok.com"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "support@aftersolves.com",
+            "contactType": "customer support"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "AfterSolves",
+        "url": "https://aftersolves.com"
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = { darkMode: 'class' }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- aura-ga4-start -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-2M6V79H761"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2M6V79H761');
+    </script>
+    <!-- aura-ga4-end -->
+</head>
+<body class="bg-yellow-50 dark:bg-neutral-900 text-neutral-800 dark:text-neutral-200 antialiased selection:bg-yellow-400 selection:text-neutral-900 transition-colors duration-300">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 left-0 w-full z-50 px-4 py-3 lg:px-12 lg:py-4 flex justify-between items-center bg-yellow-50/80 dark:bg-neutral-900/80 backdrop-blur-md border-b border-yellow-200/50 dark:border-neutral-800 transition-colors">
+        <div class="flex items-center gap-4 lg:gap-8">
+            <a href="/" data-link="/" class="text-base lg:text-xl font-normal tracking-tight hover:text-orange-500 transition-colors">AfterSolves</a>
+            <div class="hidden lg:flex gap-6">
+                <a href="/services" data-link="/services" class="text-lg font-normal tracking-tight hover:text-orange-500 transition-colors">Services</a>
+                <a href="/partnership" data-link="/partnership" class="text-lg font-normal tracking-tight hover:text-orange-500 transition-colors">Partners</a>
+                <a href="/about" data-link="/about" class="text-lg font-normal tracking-tight hover:text-orange-500 transition-colors">Team</a>
+                <a href="/resources" data-link="/resources" class="text-lg font-normal tracking-tight hover:text-orange-500 transition-colors">Resources</a>
+            </div>
+        </div>
+        <div class="flex items-center gap-2 sm:gap-4 lg:gap-6">
+            <!-- Theme Mode Dropdown (Light / Dark / System) -->
+            <div class="relative" id="theme-dropdown-wrapper">
+                <button id="theme-toggle" class="w-10 h-10 lg:w-12 lg:h-12 rounded-full border border-neutral-300 dark:border-neutral-700 flex items-center justify-center hover:bg-white dark:hover:bg-neutral-800 transition-all" aria-label="Toggle theme">
+                    <i data-lucide="monitor" class="w-4 h-4 lg:w-5 lg:h-5" stroke-width="1.5" id="theme-icon-current"></i>
+                </button>
+                <div id="theme-dropdown" class="theme-dropdown hidden absolute right-0 top-full mt-2 w-44 bg-white dark:bg-neutral-800 border border-yellow-200 dark:border-neutral-700 rounded-2xl shadow-2xl py-2 z-[60]">
+                    <button data-theme="light" class="theme-option w-full px-4 py-2.5 flex items-center gap-3 hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors text-sm text-neutral-700 dark:text-neutral-200">
+                        <i data-lucide="sun" class="w-4 h-4" stroke-width="1.5"></i>
+                        <span class="font-normal">Light</span>
+                        <i data-lucide="check" class="w-4 h-4 ml-auto theme-check hidden text-orange-500" stroke-width="2.5"></i>
+                    </button>
+                    <button data-theme="dark" class="theme-option w-full px-4 py-2.5 flex items-center gap-3 hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors text-sm text-neutral-700 dark:text-neutral-200">
+                        <i data-lucide="moon" class="w-4 h-4" stroke-width="1.5"></i>
+                        <span class="font-normal">Dark</span>
+                        <i data-lucide="check" class="w-4 h-4 ml-auto theme-check hidden text-orange-500" stroke-width="2.5"></i>
+                    </button>
+                    <button data-theme="system" class="theme-option w-full px-4 py-2.5 flex items-center gap-3 hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors text-sm text-neutral-700 dark:text-neutral-200">
+                        <i data-lucide="monitor" class="w-4 h-4" stroke-width="1.5"></i>
+                        <span class="font-normal">System</span>
+                        <i data-lucide="check" class="w-4 h-4 ml-auto theme-check hidden text-orange-500" stroke-width="2.5"></i>
+                    </button>
+                </div>
+            </div>
+            <a href="/project" data-link="/project" class="text-sm lg:text-lg font-normal tracking-tight bg-neutral-800 dark:bg-yellow-400 dark:text-neutral-900 text-white px-4 py-2 lg:px-8 lg:py-3 rounded-full hover:bg-neutral-700 dark:hover:bg-yellow-300 transition-colors shadow-lg shadow-neutral-800/20">Start Project</a>
+            
+            <!-- Mobile & Tablet Hamburger with Animation -->
+            <button id="menu-toggle" class="lg:hidden w-10 h-10 rounded-full border border-neutral-300 dark:border-neutral-700 flex items-center justify-center hover:bg-white dark:hover:bg-neutral-800 transition-all" aria-label="Toggle menu">
+                <div class="hamburger-icon" id="hamburger-icon">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-yellow-50 dark:bg-neutral-900 border-b border-yellow-200 dark:border-neutral-800 lg:hidden flex-col py-4 px-4 shadow-lg">
+            <a href="/home" data-link="/home" class="py-3 px-4 text-base font-normal text-neutral-800 dark:text-neutral-200 hover:bg-yellow-100 dark:hover:bg-neutral-800 rounded-lg transition-colors">Home</a>
+            <a href="/services" data-link="/services" class="py-3 px-4 text-base font-normal text-neutral-800 dark:text-neutral-200 hover:bg-yellow-100 dark:hover:bg-neutral-800 rounded-lg transition-colors">Services</a>
+            <a href="/partnership" data-link="/partnership" class="py-3 px-4 text-base font-normal text-neutral-800 dark:text-neutral-200 hover:bg-yellow-100 dark:hover:bg-neutral-800 rounded-lg transition-colors">Partners</a>
+            <a href="/about" data-link="/about" class="py-3 px-4 text-base font-normal text-neutral-800 dark:text-neutral-200 hover:bg-yellow-100 dark:hover:bg-neutral-800 rounded-lg transition-colors">Team</a>
+            <a href="/leaderships" data-link="/leaderships" class="py-3 px-4 text-base font-normal text-neutral-800 dark:text-neutral-200 hover:bg-yellow-100 dark:hover:bg-neutral-800 rounded-lg transition-colors">Our People</a>
+            <a href="/resources" data-link="/resources" class="py-3 px-4 text-base font-normal text-neutral-800 dark:text-neutral-200 hover:bg-yellow-100 dark:hover:bg-neutral-800 rounded-lg transition-colors">Resources</a>
+            <div class="border-t border-yellow-200 dark:border-neutral-700 mt-2 pt-2">
+                <p class="py-2 px-4 text-xs font-medium text-neutral-400 uppercase tracking-wider">Legal & Policies</p>
+                <a href="/privacy" data-link="/privacy" class="py-3 px-4 text-base font-normal text-neutral-800 dark:text-neutral-200 hover:bg-yellow-100 dark:hover:bg-neutral-800 rounded-lg transition-colors">Privacy Policy</a>
+                <a href="/terms" data-link="/terms" class="py-3 px-4 text-base font-normal text-neutral-800 dark:text-neutral-200 hover:bg-yellow-100 dark:hover:bg-neutral-800 rounded-lg transition-colors">Terms & Conditions</a>
+                <a href="/refund" data-link="/refund" class="py-3 px-4 text-base font-normal text-neutral-800 dark:text-neutral-200 hover:bg-yellow-100 dark:hover:bg-neutral-800 rounded-lg transition-colors">Refund Policy</a>
+                <a href="/payment" data-link="/payment" class="py-3 px-4 text-base font-normal text-neutral-800 dark:text-neutral-200 hover:bg-yellow-100 dark:hover:bg-neutral-800 rounded-lg transition-colors">Payment Policy</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content" class="min-h-screen">
+        
+        <!-- ============ HOME PAGE ============ -->
+        <div id="home" class="page-content">
+            <!-- Hero Section -->
+            <header class="relative w-full min-h-[70vh] md:h-screen md:min-h-[800px] flex flex-col justify-between overflow-hidden rounded-b-[2rem] md:rounded-b-[2.5rem] bg-yellow-400">
+                <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-yellow-300 via-yellow-400 to-yellow-500"></div>
+
+                <div class="relative z-10 pt-16 md:pt-32 px-4 md:px-12 flex-1 flex flex-col justify-center items-center text-center">
+                    <span class="text-sm md:text-xl font-normal text-neutral-800 mb-3 md:mb-4 capitalize">Design. Build. Scale.</span>
+                    <h1 class="text-2xl sm:text-5xl md:text-7xl font-normal tracking-tight text-white leading-snug md:leading-none uppercase drop-shadow-sm">
+                        AI-Powered Engineering
+                    </h1>
+                </div>
+
+                <div class="relative z-10 p-4 md:p-12 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8 text-neutral-800">
+                    <div class="flex items-center gap-3 md:gap-4 max-w-sm bg-white/90 backdrop-blur-md rounded-full p-2 pr-4 md:pr-6 shadow-xl shadow-yellow-600/10 border border-white">
+                        <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-yellow-100 flex items-center justify-center text-orange-500 flex-shrink-0">
+                            <i data-lucide="package" class="w-5 h-5 md:w-6 md:h-6" stroke-width="1.5"></i>
+                        </div>
+                        <p class="text-sm md:text-xl font-normal">Modern SaaS & Web Systems</p>
+                    </div>
+                    <div class="max-w-xl text-left bg-white/50 backdrop-blur-sm p-4 md:p-6 rounded-2xl md:rounded-3xl border border-white/60 shadow-lg shadow-yellow-600/5">
+                        <p class="text-sm md:text-xl text-neutral-700 font-normal leading-relaxed">We build modern websites, SaaS products, and AI systems that scale. Partner with a senior team focused on performance, automation, and precision.</p>
+                    </div>
+                </div>
+            </header>
+
+            <!-- About Section -->
+            <section class="py-12 md:py-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start">
+                    <div class="md:col-span-3 flex items-center gap-3">
+                        <i data-lucide="star" class="text-orange-500 w-5 h-5 md:w-6 md:h-6" stroke-width="1.5"></i>
+                        <span class="text-sm md:text-lg font-normal italic text-orange-500 capitalize">About the Studio</span>
+                    </div>
+                    <div class="md:col-span-9">
+                        <h2 class="text-xl md:text-4xl lg:text-6xl font-normal tracking-tight leading-tight text-neutral-800 dark:text-neutral-100">
+                            We operate as an extension of your team. Our engineers and designers translate complex business requirements into reliable, scalable software.
+                        </h2>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Highlights -->
+            <section class="pb-12 md:pb-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div class="bg-yellow-400 rounded-[1.5rem] md:rounded-[2.5rem] p-6 md:p-10 flex flex-col justify-between min-h-[350px] md:min-h-[400px] text-neutral-900 border border-yellow-300 shadow-xl shadow-yellow-500/10">
+                        <div class="flex justify-between items-start">
+                            <div class="w-12 h-12 md:w-14 md:h-14 bg-white rounded-full flex items-center justify-center text-orange-500 shadow-sm">
+                                <i data-lucide="layout-grid" class="w-6 h-6 md:w-7 md:h-7" stroke-width="1.5"></i>
+                            </div>
+                            <div class="flex -space-x-3">
+                                <img src="https://i.pravatar.cc/100?img=1" class="w-10 h-10 md:w-12 md:h-12 rounded-full border-4 border-yellow-400" alt="Avatar">
+                                <img src="https://i.pravatar.cc/100?img=2" class="w-10 h-10 md:w-12 md:h-12 rounded-full border-4 border-yellow-400" alt="Avatar">
+                            </div>
+                        </div>
+                        <div class="mt-6 md:mt-12">
+                            <h3 class="text-xl md:text-4xl font-normal tracking-tight mb-4 md:mb-6 text-neutral-900">Define your product scope or book a technical consultation.</h3>
+                            <div class="inline-flex items-center gap-2 md:gap-3 bg-white/60 backdrop-blur-sm rounded-full px-4 py-2 md:px-5 md:py-2.5 mt-2 md:mt-4 border border-white">
+                                <div class="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-orange-500 animate-pulse"></div>
+                                <span class="text-sm md:text-lg font-normal text-neutral-800">Now Scheduling</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden min-h-[350px] md:min-h-[400px] relative group shadow-xl shadow-neutral-200/50 dark:shadow-black/30 border-4 md:border-8 border-white dark:border-neutral-800 bg-white">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5e255785345947.5d7903622c058.gif" alt="Nature" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 absolute inset-0">
+                        <div class="absolute inset-0 bg-yellow-400/10 group-hover:bg-yellow-400/0 transition-colors duration-700"></div>
+                        <div class="absolute inset-0 flex items-center justify-center p-4">
+                            <span class="bg-white/90 dark:bg-neutral-900/90 backdrop-blur-md border border-white dark:border-neutral-700 text-neutral-800 dark:text-white px-6 py-3 md:px-8 md:py-4 rounded-full text-sm md:text-xl font-normal tracking-tight shadow-lg shadow-black/5">AI Automation</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2.5rem] p-6 md:p-10 flex flex-col justify-between min-h-[350px] md:min-h-[400px] border border-yellow-200 dark:border-neutral-700 shadow-xl shadow-yellow-500/5">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <span class="text-5xl md:text-8xl font-normal tracking-tight text-neutral-800 dark:text-white">98%</span>
+                                <p class="text-sm md:text-xl text-neutral-500 dark:text-neutral-400 mt-2 font-normal">Client Retention</p>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs md:text-lg font-normal text-orange-600 bg-orange-50 dark:bg-orange-900/20 px-3 py-1 md:px-4 md:py-2 rounded-full border border-orange-100 dark:border-orange-900/50">
+                                <i data-lucide="zap" class="w-4 h-4 md:w-5 md:h-5" stroke-width="1.5"></i>
+                                <span>This Year</span>
+                            </div>
+                        </div>
+                        <div class="flex items-end gap-3 mt-6 md:mt-12 h-24 md:h-32">
+                            <div class="w-full bg-yellow-100 dark:bg-yellow-900/30 rounded-t-full h-1/4"></div>
+                            <div class="w-full bg-yellow-200 dark:bg-yellow-800/40 rounded-t-full h-2/4"></div>
+                            <div class="w-full bg-yellow-400 rounded-t-full h-3/4"></div>
+                            <div class="w-full bg-orange-400 rounded-t-full h-full relative">
+                                <div class="absolute -top-4 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white border-2 border-orange-500"></div>
+                            </div>
+                            <div class="w-full bg-yellow-200 dark:bg-yellow-800/40 rounded-t-full h-1/2"></div>
+                        </div>
+                        <div class="flex justify-between text-sm md:text-lg text-neutral-400 mt-4 font-normal">
+                            <span>Q1</span><span>Q2</span><span>Q3</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reflection Wall -->
+            <section class="py-12 md:py-24 bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[3rem] mx-2 md:mx-6 mb-12 md:mb-24 px-4 md:px-12 flex flex-col items-center shadow-xl border border-yellow-100 dark:border-neutral-700">
+                <div class="inline-block border border-orange-200 dark:border-orange-900 bg-orange-50 dark:bg-orange-900/20 rounded-full px-4 py-1 md:px-6 md:py-2 text-sm md:text-lg font-normal text-orange-600 dark:text-orange-400 mb-6 md:mb-12">
+                    Client Testimonials
+                </div>
+                <h2 class="text-xl md:text-4xl lg:text-6xl font-normal tracking-tight text-center max-w-5xl leading-tight mb-8 md:mb-20 text-neutral-800 dark:text-neutral-100">
+                    "AfterSolves delivered our platform ahead of schedule. Their precise execution in AI integration and frontend architecture gave us a distinct market advantage."
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 w-full max-w-4xl mx-auto">
+                    <div class="relative rounded-[1rem] md:rounded-[2rem] overflow-hidden aspect-[4/3] border-[4px] md:border-[6px] border-white dark:border-neutral-900 shadow-md group bg-yellow-50 dark:bg-neutral-700">
+                        <img src="https://media.giphy.com/media/UvPvsX9oMlMWs/giphy.gif" alt="Working" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute bottom-3 left-3 md:bottom-4 md:left-4 flex items-center gap-2 text-neutral-900 bg-yellow-400/90 px-3 py-1 md:px-4 md:py-2 rounded-full text-sm md:text-lg font-normal">System Architecture</div>
+                    </div>
+                    <div class="relative rounded-[1rem] md:rounded-[2rem] overflow-hidden aspect-[4/3] border-[4px] md:border-[6px] border-white dark:border-neutral-900 shadow-md group bg-yellow-50 dark:bg-neutral-700">
+                        <img src="https://images.luviio.com/kretworks.gif" alt="Collaboration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute bottom-3 left-3 md:bottom-4 md:left-4 flex items-center gap-2 text-neutral-900 bg-yellow-400/90 px-3 py-1 md:px-4 md:py-2 rounded-full text-sm md:text-lg font-normal">Product Strategy</div>
+                    </div>
+                    <div class="relative rounded-[1rem] md:rounded-[2rem] overflow-hidden aspect-[4/3] bg-yellow-50 dark:bg-neutral-700 flex items-center justify-center border-[4px] md:border-[6px] border-white dark:border-neutral-900 shadow-sm">
+                        <div class="bg-white dark:bg-neutral-800 border border-yellow-200 dark:border-neutral-600 px-4 py-2 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-normal tracking-tight shadow-sm text-orange-600 flex items-center gap-2 md:gap-3">
+                            <div class="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-yellow-400 animate-pulse"></div> Developing UI
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Teams Layout -->
+            <section class="py-12 md:py-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-8">
+                    <div class="lg:col-span-5 flex flex-col">
+                        <span class="text-sm md:text-lg font-normal text-orange-600 mb-3 md:mb-6 border border-orange-200 dark:border-orange-900 bg-orange-50 dark:bg-orange-900/20 rounded-full px-4 py-1 md:px-5 md:py-2 w-fit shadow-sm">Leadership</span>
+                        <h2 class="text-3xl md:text-5xl lg:text-6xl font-normal tracking-tight mb-4 md:mb-8 text-neutral-800 dark:text-neutral-100 leading-tight">Solvers<br>Team</h2>
+                        <p class="text-base md:text-xl text-neutral-600 dark:text-neutral-400 mb-6 md:mb-12 max-w-md leading-relaxed">
+                            Experienced leadership guiding our engineering teams. We ensure your technical execution aligns perfectly with business objectives.
+                        </p>
+                        <div class="space-y-4 md:space-y-8 flex-1">
+                            <div class="flex items-center gap-4 md:gap-6 group bg-white dark:bg-neutral-800 p-3 md:p-4 rounded-2xl md:rounded-3xl border border-transparent hover:border-yellow-200 dark:hover:border-neutral-600 transition-all cursor-pointer">
+                                <img src="https://images.luviio.com/danialdanish-luviio-founder.JPEG" alt="Officer" class="w-16 h-16 md:w-20 md:h-20 rounded-2xl object-cover border-4 border-yellow-100 group-hover:border-yellow-300 transition-colors">
+                                <div>
+                                    <h4 class="text-lg md:text-2xl font-normal tracking-tight text-neutral-800 dark:text-white">Danial Danish</h4>
+                                    <p class="text-sm md:text-lg text-orange-500 font-normal mt-1">Founder & Intelligence Architect</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 md:gap-6 group bg-white dark:bg-neutral-800 p-3 md:p-4 rounded-2xl md:rounded-3xl border border-transparent hover:border-yellow-200 dark:hover:border-neutral-600 transition-all cursor-pointer">
+                                <img src="https://images.luviio.com/bella-aftersolves.JPEG" alt="Officer" class="w-16 h-16 md:w-20 md:h-20 rounded-2xl object-cover border-4 border-yellow-100 group-hover:border-yellow-300 transition-colors">
+                                <div>
+                                    <h4 class="text-lg md:text-2xl font-normal tracking-tight text-neutral-800 dark:text-white">Nurul Nabila</h4>
+                                    <p class="text-sm md:text-lg text-neutral-500 dark:text-neutral-400 font-normal mt-1">Co-Founder & Systems Architect</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 md:gap-6 group bg-white dark:bg-neutral-800 p-3 md:p-4 rounded-2xl md:rounded-3xl border border-transparent hover:border-yellow-200 dark:hover:border-neutral-600 transition-all cursor-pointer">
+                                <img src="https://images.luviio.com/putri-web.jpeg" alt="Officer" class="w-16 h-16 md:w-20 md:h-20 rounded-2xl object-cover border-4 border-yellow-100 group-hover:border-yellow-300 transition-colors">
+                                <div>
+                                    <h4 class="text-lg md:text-2xl font-normal tracking-tight text-neutral-800 dark:text-white">Putri Erinna</h4>
+                                    <p class="text-sm md:text-lg text-neutral-500 dark:text-neutral-400 font-normal mt-1">Head of Client Success</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-7 space-y-4 md:space-y-6">
+                        <div class="bg-neutral-800 dark:bg-neutral-700 rounded-[1.5rem] md:rounded-[2.5rem] p-6 md:p-12 text-white flex flex-col md:flex-row justify-between items-start md:items-center gap-4 md:gap-8 shadow-2xl shadow-neutral-900/10">
+                            <div>
+                                <h3 class="text-2xl md:text-4xl lg:text-5xl font-normal tracking-tight mb-2 md:mb-3">Core Engineering</h3>
+                                <p class="text-sm md:text-xl text-neutral-300">Building your technical foundation.</p>
+                            </div>
+                            <a href="/case-studies" data-link="/case-studies" class="bg-yellow-400 text-neutral-900 hover:bg-yellow-500 transition-colors rounded-full px-6 py-3 md:px-8 md:py-4 text-sm md:text-lg font-normal whitespace-nowrap shadow-md">View Case Studies</a>
+                        </div>
+                        <div class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2.5rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 md:gap-8 shadow-lg shadow-yellow-500/5">
+                            <div>
+                                <h3 class="text-xl md:text-3xl font-normal tracking-tight mb-2 text-neutral-800 dark:text-white">Frontend Development</h3>
+                                <div class="flex items-center gap-4 md:gap-8 mt-3 md:mt-6">
+                                    <div class="flex flex-col">
+                                        <span class="text-xs md:text-lg text-orange-500 font-normal mb-1">Lead</span>
+                                        <span class="text-sm md:text-xl font-normal text-neutral-800 dark:text-white">Danial</span>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="text-xs md:text-lg text-orange-500 font-normal mb-1">UI/UX</span>
+                                        <span class="text-sm md:text-xl font-normal text-neutral-800 dark:text-white">Bella</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/ui-ux/design" data-link="/ui-ux/design" class="bg-neutral-800 dark:bg-yellow-400 dark:text-neutral-900 text-white hover:bg-neutral-700 dark:hover:bg-yellow-300 transition-colors rounded-full px-6 py-3 md:px-8 md:py-4 text-sm md:text-lg font-normal whitespace-nowrap shadow-md">View UI Work</a>
+                        </div>
+                        <div class="bg-yellow-50 dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2.5rem] p-6 md:p-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 md:gap-8 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                            <div>
+                                <h3 class="text-xl md:text-3xl font-normal tracking-tight mb-2 md:mb-3 text-neutral-800 dark:text-white">Backend & AI</h3>
+                                <p class="text-sm md:text-xl text-neutral-500 dark:text-neutral-400">Scalable infrastructure and AI systems.</p>
+                            </div>
+                            <div class="flex -space-x-4">
+                                <img src="https://images.seeklogo.com/logo-png/46/1/chatgpt-logo-png_seeklogo-465219.png" class="w-12 h-12 md:w-16 md:h-16 rounded-full border-4 border-yellow-50 dark:border-neutral-800 shadow-sm" alt="Dev">
+                                <img src="https://pbs.twimg.com/profile_images/1970775077181411328/W8XKaUIh_400x400.jpg" class="w-12 h-12 md:w-16 md:h-16 rounded-full border-4 border-yellow-50 dark:border-neutral-800 shadow-sm" alt="Dev">
+                                <img src="https://yt3.googleusercontent.com/KVjptxDSWT7rjVfGax2TgTNVAYgplgo1z_fwaV3MFjPpcmNVZC0TIgQV030BPJ0ybCP3_Fz-2w=s900-c-k-c0x00ffffff-no-rj" class="w-12 h-12 md:w-16 md:h-16 rounded-full border-4 border-yellow-50 dark:border-neutral-800 shadow-sm" alt="Dev">
+                                <div class="w-12 h-12 md:w-16 md:h-16 rounded-full border-4 border-yellow-50 dark:border-neutral-800 bg-yellow-400 flex items-center justify-center text-sm md:text-lg font-normal text-neutral-900 z-10 shadow-sm">+4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Tools Teams -->
+            <section class="py-12 px-4 md:px-12 max-w-screen-2xl mx-auto border-t border-yellow-200 dark:border-neutral-700">
+                <div class="flex items-center justify-between mb-8 md:mb-16">
+                    <h2 class="text-xl md:text-4xl font-normal tracking-tight text-neutral-800 dark:text-white">Powerful Integration Tools</h2>
+                    <a href="/ai-tools" data-link="/ai-tools" class="text-sm md:text-lg font-normal text-orange-500 hover:text-orange-600 flex items-center gap-2 transition-colors bg-orange-50 dark:bg-orange-900/20 px-4 py-1 md:px-5 md:py-2 rounded-full">
+                        View All <i data-lucide="arrow-right" class="w-4 h-4" stroke-width="1.5"></i>
+                    </a>
+                </div>
+                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-8" id="home-ai-tools"></div>
+            </section>
+
+            <!-- Full Width Gallery -->
+            <section class="py-12 w-full overflow-hidden">
+                <div class="flex gap-4 md:gap-6 px-4 md:px-12">
+                    <div class="h-48 md:h-[28rem] flex-1 rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden shadow-xl shadow-yellow-500/10 border-4 md:border-[6px] border-white dark:border-neutral-800">
+                        <img src="https://images.luviio.com/aftersolves.gif.gif" class="w-full h-full object-cover" alt="Gallery">
+                    </div>
+                    <div class="h-48 md:h-[28rem] flex-1 rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden hidden md:block shadow-xl shadow-yellow-500/10 border-4 md:border-[6px] border-white dark:border-neutral-800">
+                        <img src="https://motionsites.ai/assets/hero-space-voyage-preview-eECLH3Yc.gif" class="w-full h-full object-cover" alt="Gallery">
+                    </div>
+                    <div class="h-48 md:h-[28rem] flex-1 rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden bg-yellow-400 flex items-center justify-center p-6 md:p-12 text-center shadow-xl shadow-yellow-500/10 border-4 md:border-[6px] border-white dark:border-neutral-800">
+                        <h3 class="text-xl md:text-5xl font-normal tracking-tight text-neutral-900 leading-tight">Reliable products built for scale.</h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ============ LEADERSHIPS PAGE (People at AfterSolves) ============ -->
+        <div id="leaderships" class="page-content">
+            <!-- Hero -->
+            <header class="relative w-full min-h-[50vh] md:h-[60vh] flex flex-col justify-center items-center overflow-hidden rounded-b-[2rem] md:rounded-b-[2.5rem] bg-yellow-400">
+                <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-yellow-300 via-yellow-400 to-yellow-500"></div>
+                <div class="relative z-10 pt-16 md:pt-32 px-4 md:px-12 flex-1 flex flex-col justify-center items-center text-center">
+                    <span class="text-sm md:text-xl font-normal text-neutral-800 mb-3 md:mb-4 capitalize">Meet the Team</span>
+                    <h1 class="text-2xl sm:text-5xl md:text-7xl font-normal tracking-tight text-white leading-snug md:leading-none uppercase drop-shadow-sm">
+                        People at AfterSolves
+                    </h1>
+                    <p class="text-sm md:text-xl text-neutral-800/80 mt-4 md:mt-6 max-w-2xl font-normal">
+                        The minds behind every line of code, every pixel, and every system we ship.
+                    </p>
+                </div>
+            </header>
+
+            <!-- Intro -->
+            <section class="py-12 md:py-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start">
+                    <div class="md:col-span-3 flex items-center gap-3">
+                        <i data-lucide="users" class="text-orange-500 w-5 h-5 md:w-6 md:h-6" stroke-width="1.5"></i>
+                        <span class="text-sm md:text-lg font-normal italic text-orange-500 capitalize">The Solvers</span>
+                    </div>
+                    <div class="md:col-span-9">
+                        <h2 class="text-xl md:text-4xl lg:text-5xl font-normal tracking-tight leading-tight text-neutral-800 dark:text-neutral-100">
+                            We are a small, senior team of engineers, designers, and strategists. No middlemen, no bureaucracy — just people who care deeply about the craft.
+                        </h2>
+                    </div>
+                </div>
+            </section>
+
+            <!-- People Grid -->
+            <section class="pb-12 md:pb-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8" id="people-grid">
+                    <!-- Cards rendered by JS -->
+                </div>
+            </section>
+
+            <!-- AI Tools Teams -->
+            <section class="py-12 px-4 md:px-12 max-w-screen-2xl mx-auto border-t border-yellow-200 dark:border-neutral-700">
+                <div class="flex items-center justify-between mb-8 md:mb-16">
+                    <h2 class="text-xl md:text-4xl font-normal tracking-tight text-neutral-800 dark:text-white">Tools We Build With</h2>
+                    <a href="/ai-tools" data-link="/ai-tools" class="text-sm md:text-lg font-normal text-orange-500 hover:text-orange-600 flex items-center gap-2 transition-colors bg-orange-50 dark:bg-orange-900/20 px-4 py-1 md:px-5 md:py-2 rounded-full">
+                        View All <i data-lucide="arrow-right" class="w-4 h-4" stroke-width="1.5"></i>
+                    </a>
+                </div>
+                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-8" id="leaderships-ai-tools"></div>
+            </section>
+        </div>
+
+        <!-- ============ PARTNERSHIP PAGE ============ -->
+        <div id="partnership" class="page-content">
+            <!-- Hero -->
+            <header class="relative w-full min-h-[50vh] md:h-[60vh] flex flex-col justify-center items-center overflow-hidden rounded-b-[2rem] md:rounded-b-[2.5rem] bg-yellow-400">
+                <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-yellow-300 via-yellow-400 to-yellow-500"></div>
+                <div class="relative z-10 pt-16 md:pt-32 px-4 md:px-12 flex-1 flex flex-col justify-center items-center text-center">
+                    <span class="text-sm md:text-xl font-normal text-neutral-800 mb-3 md:mb-4 capitalize">Stronger Together</span>
+                    <h1 class="text-2xl sm:text-5xl md:text-7xl font-normal tracking-tight text-white leading-snug md:leading-none uppercase drop-shadow-sm">
+                        Our Partners
+                    </h1>
+                    <p class="text-sm md:text-xl text-neutral-800/80 mt-4 md:mt-6 max-w-2xl font-normal">
+                        We collaborate with trusted studios and specialists to deliver end-to-end solutions for our clients.
+                    </p>
+                </div>
+            </header>
+
+            <!-- Intro -->
+            <section class="py-12 md:py-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start">
+                    <div class="md:col-span-3 flex items-center gap-3">
+                        <i data-lucide="handshake" class="text-orange-500 w-5 h-5 md:w-6 md:h-6" stroke-width="1.5"></i>
+                        <span class="text-sm md:text-lg font-normal italic text-orange-500 capitalize">Partner Collab</span>
+                    </div>
+                    <div class="md:col-span-9">
+                        <h2 class="text-xl md:text-4xl lg:text-5xl font-normal tracking-tight leading-tight text-neutral-800 dark:text-neutral-100">
+                            AfterSolves partners with specialized studios to extend our capabilities. From brand identity to motion design, our partners share our commitment to precision and craft.
+                        </h2>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Partners Grid -->
+            <section class="pb-12 md:pb-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8" id="partners-grid">
+                    <!-- Cards rendered by JS -->
+                </div>
+            </section>
+
+            <!-- Become a Partner CTA -->
+            <section class="pb-12 md:pb-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+                <div class="bg-neutral-800 dark:bg-neutral-700 rounded-[1.5rem] md:rounded-[2.5rem] p-6 md:p-12 text-white flex flex-col md:flex-row justify-between items-start md:items-center gap-4 md:gap-8 shadow-2xl">
+                    <div>
+                        <h3 class="text-2xl md:text-4xl lg:text-5xl font-normal tracking-tight mb-2 md:mb-3">Want to Partner With Us?</h3>
+                        <p class="text-sm md:text-xl text-neutral-300">We're always open to collaborating with studios that share our standards.</p>
+                    </div>
+                    <a href="/project" data-link="/project" class="bg-yellow-400 text-neutral-900 hover:bg-yellow-500 transition-colors rounded-full px-6 py-3 md:px-8 md:py-4 text-sm md:text-lg font-normal whitespace-nowrap shadow-md">Start a Conversation</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Partner Detail Modal -->
+        <div id="partner-modal-overlay" class="hidden fixed inset-0 z-[100] bg-black/50 backdrop-blur-sm flex items-center justify-center p-4" role="dialog" aria-modal="true">
+            <div id="partner-modal" class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto border border-yellow-200 dark:border-neutral-700">
+                <!-- Content rendered by JS -->
+            </div>
+        </div>
+
+        <!-- ============ ABOUT US PAGE ============ -->
+        <div id="about" class="page-content py-12 md:py-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+            <span class="text-sm md:text-lg font-normal italic text-orange-500 capitalize">About the Studio</span>
+            <h1 class="text-2xl md:text-6xl lg:text-7xl font-normal tracking-tight mt-3 mb-8 md:mb-12 text-neutral-800 dark:text-white">We build technology that elevates human potential.</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                <div class="md:col-span-2 space-y-4 md:space-y-6 text-base md:text-xl text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                    <p>AfterSolves was founded on the belief that modern software should be accessible, scalable, and deeply integrated with AI. We started as a small collective of senior engineers and designers who were frustrated with the slow, bureaucratic nature of traditional agency models.</p>
+                    <p>Today, we operate as an extension of your team. We strip away the fluff and focus purely on engineering excellence. Whether it's building a new SaaS platform from scratch, integrating complex AI workflows, or designing an intuitive user interface, our execution is precise and transparent.</p>
+                    <p>Our mission is simple: To solve complex business challenges through intelligent engineering, allowing our clients to focus on what they do best—growing their business.</p>
+                </div>
+                <div class="bg-white dark:bg-neutral-800 p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] border border-yellow-200 dark:border-neutral-700 shadow-lg shadow-yellow-500/5">
+                    <h3 class="text-xl font-medium text-neutral-800 dark:text-white mb-6">Core Values</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-sm md:text-lg text-neutral-600 dark:text-neutral-300">
+                            <i data-lucide="check-circle" class="w-5 h-5 md:w-6 md:h-6 text-orange-500 flex-shrink-0"></i>
+                            <span>Radical Transparency in process and pricing.</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm md:text-lg text-neutral-600 dark:text-neutral-300">
+                            <i data-lucide="check-circle" class="w-5 h-5 md:w-6 md:h-6 text-orange-500 flex-shrink-0"></i>
+                            <span>Engineering Excellence above all else.</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-sm md:text-lg text-neutral-600 dark:text-neutral-300">
+                            <i data-lucide="check-circle" class="w-5 h-5 md:w-6 md:h-6 text-orange-500 flex-shrink-0"></i>
+                            <span>AI-First approach to problem solving.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ CAREERS PAGE ============ -->
+        <div id="careers" class="page-content py-12 md:py-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+            <span class="text-sm md:text-lg font-normal italic text-orange-500 capitalize">Join the Team</span>
+            <h1 class="text-2xl md:text-6xl lg:text-7xl font-normal tracking-tight mt-3 mb-8 md:mb-12 text-neutral-800 dark:text-white">Build the future of AI with us.</h1>
+            <p class="text-base md:text-xl text-neutral-600 dark:text-neutral-300 max-w-2xl mb-10 md:mb-16">We are always looking for exceptional engineers, designers, and strategists who want to push the boundaries of what's possible.</p>
+            
+            <div class="space-y-4">
+                <div class="bg-white dark:bg-neutral-800 p-4 md:p-8 rounded-2xl md:rounded-3xl border border-yellow-200 dark:border-neutral-700 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 hover:shadow-lg transition-shadow">
+                    <div>
+                        <h3 class="text-lg md:text-2xl font-medium text-neutral-800 dark:text-white">Senior Full-Stack Engineer</h3>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 mt-1">Kedah · Remote · Full Time · RM 5k - RM 10k</p>
+                    </div>
+                    <button class="bg-neutral-800 dark:bg-yellow-400 text-white dark:text-neutral-900 px-5 py-2 md:px-6 md:py-3 rounded-full text-sm md:text-base font-normal hover:bg-neutral-700 dark:hover:bg-yellow-300 transition-colors">Apply Now</button>
+                </div>
+                <div class="bg-white dark:bg-neutral-800 p-4 md:p-8 rounded-2xl md:rounded-3xl border border-yellow-200 dark:border-neutral-700 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 hover:shadow-lg transition-shadow">
+                    <div>
+                        <h3 class="text-lg md:text-2xl font-medium text-neutral-800 dark:text-white">AI Systems Architect</h3>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 mt-1">Kedah · Remote · Contract · Negotiable</p>
+                    </div>
+                    <button class="bg-neutral-800 dark:bg-yellow-400 text-white dark:text-neutral-900 px-5 py-2 md:px-6 md:py-3 rounded-full text-sm md:text-base font-normal hover:bg-neutral-700 dark:hover:bg-yellow-300 transition-colors">Apply Now</button>
+                </div>
+                <div class="bg-white dark:bg-neutral-800 p-4 md:p-8 rounded-2xl md:rounded-3xl border border-yellow-200 dark:border-neutral-700 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 hover:shadow-lg transition-shadow">
+                    <div>
+                        <h3 class="text-lg md:text-2xl font-medium text-neutral-800 dark:text-white">Product Designer (UI/UX)</h3>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 mt-1">Kedah · Full Time · RM 2k - RM 5k</p>
+                    </div>
+                    <button class="bg-neutral-800 dark:bg-yellow-400 text-white dark:text-neutral-900 px-5 py-2 md:px-6 md:py-3 rounded-full text-sm md:text-base font-normal hover:bg-neutral-700 dark:hover:bg-yellow-300 transition-colors">Apply Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ CONTACT PAGE ============ -->
+        <div id="contact" class="page-content py-12 md:py-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+            <span class="text-sm md:text-lg font-normal italic text-orange-500 capitalize">Support Center</span>
+            <h1 class="text-2xl md:text-6xl lg:text-7xl font-normal tracking-tight mt-3 mb-8 md:mb-12 text-neutral-800 dark:text-white">Let's build something great.</h1>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mt-8">
+                <div class="space-y-6 md:space-y-8">
+                    <div class="bg-white dark:bg-neutral-800 p-6 md:p-8 rounded-2xl md:rounded-3xl border border-yellow-200 dark:border-neutral-700">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-10 h-10 md:w-12 md:h-12 bg-yellow-100 dark:bg-yellow-900/30 rounded-full flex items-center justify-center text-orange-500">
+                                <i data-lucide="mail" class="w-5 h-5 md:w-6 md:h-6"></i>
+                            </div>
+                            <h3 class="text-lg md:text-xl font-medium text-neutral-800 dark:text-white">Email Support</h3>
+                        </div>
+                        <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-300">For project inquiries: hello@aftersolves.com</p>
+                        <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-300 mt-1">For support: support@aftersolves.com</p>
+                    </div>
+                    <div class="bg-white dark:bg-neutral-800 p-6 md:p-8 rounded-2xl md:rounded-3xl border border-yellow-200 dark:border-neutral-700">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-10 h-10 md:w-12 md:h-12 bg-yellow-100 dark:bg-yellow-900/30 rounded-full flex items-center justify-center text-orange-500">
+                                <i data-lucide="phone" class="w-5 h-5 md:w-6 md:h-6"></i>
+                            </div>
+                            <h3 class="text-lg md:text-xl font-medium text-neutral-800 dark:text-white">Phone & Offices</h3>
+                        </div>
+                        <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-300">Kuala Lumpur, Malaysia</p>
+                        <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-300 mt-1">+603 1234 5678</p>
+                        <p class="text-neutral-500 mt-2 text-xs md:text-sm">Mon - Fri, 9:00 AM - 6:00 PM MYT</p>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-neutral-800 p-6 md:p-12 rounded-2xl md:rounded-3xl border border-yellow-200 dark:border-neutral-700 shadow-lg shadow-yellow-500/5">
+                    <h3 class="text-xl md:text-2xl font-medium text-neutral-800 dark:text-white mb-6">Send us a message</h3>
+                    <form class="space-y-4 md:space-y-6">
+                        <div>
+                            <label class="block text-xs md:text-sm text-neutral-600 dark:text-neutral-400 mb-2">Your Name</label>
+                            <input type="text" placeholder="John Doe" class="w-full bg-yellow-50 dark:bg-neutral-900 border border-yellow-200 dark:border-neutral-700 rounded-xl px-4 py-2.5 md:py-3 focus:outline-none focus:border-orange-400 text-sm md:text-base text-neutral-800 dark:text-white">
+                        </div>
+                        <div>
+                            <label class="block text-xs md:text-sm text-neutral-600 dark:text-neutral-400 mb-2">Email Address</label>
+                            <input type="email" placeholder="john@company.com" class="w-full bg-yellow-50 dark:bg-neutral-900 border border-yellow-200 dark:border-neutral-700 rounded-xl px-4 py-2.5 md:py-3 focus:outline-none focus:border-orange-400 text-sm md:text-base text-neutral-800 dark:text-white">
+                        </div>
+                        <div>
+                            <label class="block text-xs md:text-sm text-neutral-600 dark:text-neutral-400 mb-2">How can we help?</label>
+                            <textarea rows="4" placeholder="Tell us about your project..." class="w-full bg-yellow-50 dark:bg-neutral-900 border border-yellow-200 dark:border-neutral-700 rounded-xl px-4 py-2.5 md:py-3 focus:outline-none focus:border-orange-400 text-sm md:text-base text-neutral-800 dark:text-white"></textarea>
+                        </div>
+                        <button type="button" class="w-full bg-neutral-800 dark:bg-yellow-400 text-white dark:text-neutral-900 px-6 py-3 md:py-4 rounded-full text-sm md:text-base font-normal hover:bg-neutral-700 dark:hover:bg-yellow-300 transition-colors">Submit Ticket</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ SERVICES PAGE ============ -->
+        <div id="services" class="page-content py-12 md:py-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+            <span class="text-sm md:text-lg font-normal italic text-orange-500 capitalize">What we do</span>
+            <h1 class="text-2xl md:text-6xl lg:text-7xl font-normal tracking-tight mt-3 mb-8 md:mb-12 text-neutral-800 dark:text-white">Services built for scale.</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="/saas-dev" data-link="/saas-dev" class="bg-white dark:bg-neutral-800 p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] border border-yellow-200 dark:border-neutral-700 hover:shadow-xl hover:-translate-y-1 transition-all group">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-yellow-100 dark:bg-yellow-900/30 rounded-full flex items-center justify-center text-orange-500 mb-4 md:mb-6">
+                        <i data-lucide="cloud" class="w-6 h-6 md:w-7 md:h-7"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-medium text-neutral-800 dark:text-white mb-2">SaaS Development</h3>
+                    <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-400 mb-4">Robust, multi-tenant SaaS platforms built with modern stacks like Next.js, Supabase, and Tailwind.</p>
+                    <span class="text-sm md:text-base text-orange-500 flex items-center gap-2">Learn more <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+                </a>
+                <a href="/ai-systems" data-link="/ai-systems" class="bg-white dark:bg-neutral-800 p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] border border-yellow-200 dark:border-neutral-700 hover:shadow-xl hover:-translate-y-1 transition-all group">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-yellow-100 dark:bg-yellow-900/30 rounded-full flex items-center justify-center text-orange-500 mb-4 md:mb-6">
+                        <i data-lucide="cpu" class="w-6 h-6 md:w-7 md:h-7"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-medium text-neutral-800 dark:text-white mb-2">AI Systems</h3>
+                    <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-400 mb-4">Custom AI integrations, RAG systems, and workflow automation to give your business a competitive edge.</p>
+                    <span class="text-sm md:text-base text-orange-500 flex items-center gap-2">Learn more <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+                </a>
+                <a href="/ui-ux/design" data-link="/ui-ux/design" class="bg-white dark:bg-neutral-800 p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] border border-yellow-200 dark:border-neutral-700 hover:shadow-xl hover:-translate-y-1 transition-all group">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-yellow-100 dark:bg-yellow-900/30 rounded-full flex items-center justify-center text-orange-500 mb-4 md:mb-6">
+                        <i data-lucide="palette" class="w-6 h-6 md:w-7 md:h-7"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-medium text-neutral-800 dark:text-white mb-2">UI/UX Design</h3>
+                    <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-400 mb-4">Beautiful, accessible, and conversion-optimized interfaces backed by a comprehensive design system.</p>
+                    <span class="text-sm md:text-base text-orange-500 flex items-center gap-2">Learn more <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- ============ SAAS DEV PAGE ============ -->
+        <div id="saas-dev" class="page-content py-12 md:py-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+            <span class="text-sm md:text-lg font-normal italic text-orange-500 capitalize">Service</span>
+            <h1 class="text-2xl md:text-6xl lg:text-7xl font-normal tracking-tight mt-3 mb-8 md:mb-12 text-neutral-800 dark:text-white">SaaS Development</h1>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div class="space-y-4 md:space-y-6 text-sm md:text-lg text-neutral-600 dark:text-neutral-300">
+                    <p>We architect and build Software as a Service (SaaS) platforms from the ground up. Our expertise ensures your application is secure, scalable, and ready for enterprise use from day one.</p>
+                    <ul class="space-y-3 md:space-y-4">
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-orange-500 w-5 h-5"></i> Multi-tenant Architecture</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-orange-500 w-5 h-5"></i> Subscription & Billing Integration (Stripe)</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-orange-500 w-5 h-5"></i> Role-Based Access Control (RBAC)</li>
+                        <li class="flex items-center gap-3"><i data-lucide="check" class="text-orange-500 w-5 h-5"></i> CI/CD & Cloud Deployment</li>
+                    </ul>
+                    <a href="/project" data-link="/project" class="inline-block bg-neutral-800 dark:bg-yellow-400 text-white dark:text-neutral-900 px-6 py-3 md:px-8 md:py-4 rounded-full text-sm md:text-base font-normal mt-4">Start a SaaS Project</a>
+                </div>
+                <div class="bg-neutral-800 dark:bg-neutral-800 p-6 md:p-8 rounded-[1.5rem] md:rounded-[2.5rem] text-white shadow-2xl">
+                    <div class="flex items-center gap-2 mb-4 md:mb-6">
+                        <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                        <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                        <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                    </div>
+                    <pre class="text-xs md:text-base overflow-x-auto text-green-400"><code>const architecture = {
+  frontend: "Next.js + Tailwind",
+  backend: "Node.js + Prisma",
+  database: "PostgreSQL (Supabase)",
+  auth: "Clerk / Supabase Auth",
+  payments: "Stripe Checkout",
+  hosting: "Vercel + Cloudflare"
+};</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ AI SYSTEMS PAGE ============ -->
+        <div id="ai-systems" class="page-content py-12 md:py-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+            <span class="text-sm md:text-lg font-normal italic text-orange-500 capitalize">Service</span>
+            <h1 class="text-2xl md:text-6xl lg:text-7xl font-normal tracking-tight mt-3 mb-8 md:mb-12 text-neutral-800 dark:text-white">AI Systems Integration</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                <div class="bg-white dark:bg-neutral-800 p-6 md:p-10 rounded-[1.5rem] md:rounded-[2rem] border border-yellow-200 dark:border-neutral-700">
+                    <i data-lucide="brain-circuit" class="w-8 h-8 md:w-10 md:h-10 text-orange-500 mb-4"></i>
+                    <h3 class="text-xl md:text-2xl font-medium text-neutral-800 dark:text-white mb-3">RAG Systems</h3>
+                    <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-400">Retrieval-Augmented Generation to allow LLMs to query your private company data securely.</p>
+                </div>
+                <div class="bg-white dark:bg-neutral-800 p-6 md:p-10 rounded-[1.5rem] md:rounded-[2rem] border border-yellow-200 dark:border-neutral-700">
+                    <i data-lucide="workflow" class="w-8 h-8 md:w-10 md:h-10 text-orange-500 mb-4"></i>
+                    <h3 class="text-xl md:text-2xl font-medium text-neutral-800 dark:text-white mb-3">Workflow Automation</h3>
+                    <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-400">Automate repetitive business tasks using AI agents integrated with your internal tools.</p>
+                </div>
+                <div class="bg-white dark:bg-neutral-800 p-6 md:p-10 rounded-[1.5rem] md:rounded-[2rem] border border-yellow-200 dark:border-neutral-700">
+                    <i data-lucide="bot" class="w-8 h-8 md:w-10 md:h-10 text-orange-500 mb-4"></i>
+                    <h3 class="text-xl md:text-2xl font-medium text-neutral-800 dark:text-white mb-3">Custom Chatbots</h3>
+                    <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-400">Deploy highly capable customer support bots trained on your documentation.</p>
+                </div>
+                <div class="bg-white dark:bg-neutral-800 p-6 md:p-10 rounded-[1.5rem] md:rounded-[2rem] border border-yellow-200 dark:border-neutral-700">
+                    <i data-lucide="line-chart" class="w-8 h-8 md:w-10 md:h-10 text-orange-500 mb-4"></i>
+                    <h3 class="text-xl md:text-2xl font-medium text-neutral-800 dark:text-white mb-3">Predictive Analytics</h3>
+                    <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-400">Use machine learning models to forecast trends and user behavior.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ UI/UX DESIGN PAGE ============ -->
+        <div id="ui-ux-design" class="page-content py-12 md:py-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+            <span class="text-sm md:text-lg font-normal italic text-orange-500 capitalize">Design Library</span>
+            <h1 class="text-2xl md:text-6xl lg:text-7xl font-normal tracking-tight mt-3 mb-4 md:mb-6 text-neutral-800 dark:text-white">UI/UX Design Systems</h1>
+            <p class="text-sm md:text-xl text-neutral-600 dark:text-neutral-300 max-w-3xl mb-10 md:mb-16">Choose from our pre-built, accessible design components. Copy the code and drop it straight into your project. All components are responsive and dark-mode ready.</p>
+            
+            <div class="space-y-8 md:space-y-12">
+                <div class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] border border-yellow-200 dark:border-neutral-700 p-6 md:p-12">
+                    <h3 class="text-lg md:text-2xl font-medium text-neutral-800 dark:text-white mb-4 md:mb-6">1. Call-to-Action Card</h3>
+                    <div class="bg-yellow-50 dark:bg-neutral-900 p-4 md:p-8 rounded-xl md:rounded-2xl flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6">
+                        <h4 class="text-base md:text-2xl font-normal text-neutral-800 dark:text-white">Ready to scale your application?</h4>
+                        <button class="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition-colors whitespace-nowrap text-sm md:text-base">Get Started</button>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] border border-yellow-200 dark:border-neutral-700 p-6 md:p-12">
+                    <h3 class="text-lg md:text-2xl font-medium text-neutral-800 dark:text-white mb-4 md:mb-6">2. Simple Pricing Card</h3>
+                    <div class="max-w-sm mx-auto bg-yellow-50 dark:bg-neutral-900 border border-yellow-200 dark:border-neutral-700 rounded-2xl md:rounded-3xl p-6 md:p-8 text-center">
+                        <span class="text-orange-500 font-normal text-sm md:text-base">Pro</span>
+                        <div class="my-4">
+                            <span class="text-3xl md:text-4xl font-medium text-neutral-800 dark:text-white">RM 99</span>
+                            <span class="text-neutral-500 text-sm md:text-base">/mo</span>
+                        </div>
+                        <ul class="space-y-3 text-left text-neutral-600 dark:text-neutral-400 mb-6 md:mb-8 text-sm md:text-base">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> 10 Team Members</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> Advanced Analytics</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> 24/7 Support</li>
+                        </ul>
+                        <button class="w-full bg-neutral-800 dark:bg-yellow-400 text-white dark:text-neutral-900 py-3 rounded-full text-sm md:text-base">Choose Plan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ RESOURCES PAGE ============ -->
+        <div id="resources" class="page-content py-12 md:py-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+            <span class="text-sm md:text-lg font-normal italic text-orange-500 capitalize">Learn & Grow</span>
+            <h1 class="text-2xl md:text-6xl lg:text-7xl font-normal tracking-tight mt-3 mb-8 md:mb-12 text-neutral-800 dark:text-white">Resources</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] overflow-hidden border border-yellow-200 dark:border-neutral-700 group">
+                    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGs5NHZnOXdzN3dodXNmaGNxNmp0c2U1Z2hzMndmNWhobnliOGd6OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ftAyb0CG1FNAIZt4SO/giphy.gif" class="w-full h-40 md:h-48 object-cover group-hover:scale-105 transition-transform" alt="Resource">
+                    <div class="p-4 md:p-6">
+                        <span class="text-xs md:text-sm text-orange-500">Engineering</span>
+                        <h3 class="text-lg md:text-xl font-medium text-neutral-800 dark:text-white mt-2 mb-3">How to scale Node.js apps for Enterprise</h3>
+                        <p class="text-sm md:text-base text-neutral-500 dark:text-neutral-400">A deep dive into load balancing, caching, and database optimization.</p>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] overflow-hidden border border-yellow-200 dark:border-neutral-700 group">
+                    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmM3aXVnY2N0djg1czZtaTZxaHJ3bnc5c2NlbXVhcWo0Y3ZydW94NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mfsBwmweYFu8geNmFs/giphy.gif" class="w-full h-40 md:h-48 object-cover group-hover:scale-105 transition-transform" alt="Resource">
+                    <div class="p-4 md:p-6">
+                        <span class="text-xs md:text-sm text-orange-500">Design</span>
+                        <h3 class="text-lg md:text-xl font-medium text-neutral-800 dark:text-white mt-2 mb-3">Designing for Dark Mode: Best Practices</h3>
+                        <p class="text-sm md:text-base text-neutral-500 dark:text-neutral-400">Learn how to create accessible and beautiful dark themes.</p>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] overflow-hidden border border-yellow-200 dark:border-neutral-700 group">
+                    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3AxaDlybzNrdWp4eGtnOXJ1ZGRiM2F6ZXJlb2RtM3BoZTQ5cGNmbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ud8TdUPuo43ktL8tAE/giphy.gif" class="w-full h-40 md:h-48 object-cover group-hover:scale-105 transition-transform" alt="Resource">
+                    <div class="p-4 md:p-6">
+                        <span class="text-xs md:text-sm text-orange-500">AI</span>
+                        <h3 class="text-lg md:text-xl font-medium text-neutral-800 dark:text-white mt-2 mb-3">Build with us, publish website worldwide</h3>
+                        <p class="text-sm md:text-base text-neutral-500 dark:text-neutral-400">A step-by-step guide to embedding your data for AI models.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ CASE STUDIES PAGE ============ -->
+        <div id="case-studies" class="page-content py-12 md:py-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+            <span class="text-sm md:text-lg font-normal italic text-orange-500 capitalize">Our Work</span>
+            <h1 class="text-2xl md:text-6xl lg:text-7xl font-normal tracking-tight mt-3 mb-8 md:mb-12 text-neutral-800 dark:text-white">Case Studies</h1>
+            <div class="space-y-12 md:space-y-16">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
+                    <img src="https://images.luviio.com/kretworks.gif" class="rounded-[1.5rem] md:rounded-[2rem] shadow-lg" alt="Case Study">
+                    <div>
+                        <h2 class="text-xl md:text-3xl font-medium text-neutral-800 dark:text-white mb-4">Kretworks</h2>
+                        <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-300 mb-6">Many business owners start by asking for a logo</p>
+                        <div class="flex gap-6 md:gap-8">
+                            <div>
+                                <span class="text-2xl md:text-3xl font-medium text-orange-500">98%</span>
+                                <p class="text-xs md:text-sm text-neutral-500">Satisfaction Results</p>
+                            </div>
+                            <div>
+                                <span class="text-2xl md:text-3xl font-medium text-orange-500">100+</span>
+                                <p class="text-xs md:text-sm text-neutral-500">Designs Created</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
+                    <div class="md:order-2">
+                        <img src="https://raw.githubusercontent.com/ddnetwork-ent/clinic-azam-dental/main/IMG_2260.JPG" class="rounded-[1.5rem] md:rounded-[2rem] shadow-lg" alt="Case Study">
+                    </div>
+                    <div class="md:order-1">
+                        <h2 class="text-xl md:text-3xl font-medium text-neutral-800 dark:text-white mb-4">Dental Clinic</h2>
+                        <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-300 mb-6">We helped a local dental clinic streamline their operations and improve patient experience through a custom web application</p>
+                        <div class="flex gap-6 md:gap-8">
+                            <div>
+                                <span class="text-2xl md:text-3xl font-medium text-orange-500">99%</span>
+                                <p class="text-xs md:text-sm text-neutral-500">Patient Satisfaction</p>
+                            </div>
+                            <div>
+                                <span class="text-2xl md:text-3xl font-medium text-orange-500">400+</span>
+                                <p class="text-xs md:text-sm text-neutral-500">Reviews on Google</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ AI TOOLS PAGE ============ -->
+        <div id="ai-tools" class="page-content py-12 md:py-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+            <span class="text-sm md:text-lg font-normal italic text-orange-500 capitalize">Our Stack</span>
+            <h1 class="text-2xl md:text-6xl lg:text-7xl font-normal tracking-tight mt-3 mb-8 md:mb-12 text-neutral-800 dark:text-white">Powerful Integration Tools</h1>
+            <p class="text-sm md:text-xl text-neutral-600 dark:text-neutral-300 max-w-3xl mb-10 md:mb-16">We leverage the best AI and infrastructure tools in the industry to deliver results fast. Click any tool to learn more about it.</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8" id="ai-tools-grid"></div>
+        </div>
+
+        <!-- ============ START PROJECT PAGE (Multi-Step Form) ============ -->
+        <div id="project" class="page-content py-12 md:py-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+            <span class="text-sm md:text-lg font-normal italic text-orange-500 capitalize">Initiate</span>
+            <h1 class="text-2xl md:text-6xl lg:text-7xl font-normal tracking-tight mt-3 mb-8 md:mb-12 text-neutral-800 dark:text-white">Start a Project</h1>
+            
+            <div class="max-w-3xl mx-auto bg-white dark:bg-neutral-800 p-4 sm:p-6 md:p-12 rounded-[1.5rem] md:rounded-[2rem] border border-yellow-200 dark:border-neutral-700 shadow-lg">
+                
+                <!-- Progress Bar -->
+                <div id="progress-container" class="mb-6 md:mb-12">
+                    <div class="flex justify-between mb-2 text-xs sm:text-sm md:text-sm font-normal text-neutral-500 dark:text-neutral-400">
+                        <span id="step-indicator">Step 1 of 6</span>
+                        <span id="step-percentage">17%</span>
+                    </div>
+                    <div class="w-full bg-yellow-100 dark:bg-neutral-700 rounded-full h-2 overflow-hidden">
+                        <div id="progress-bar" class="progress-bar bg-yellow-400 h-full rounded-full" style="width: 17%"></div>
+                    </div>
+                </div>
+
+                <form id="project-form" class="space-y-6 md:space-y-8">
+                    
+                    <!-- ===== STEP 1: Project Type ===== -->
+                    <div class="form-step active" data-step="1">
+                        <label class="block text-sm md:text-base text-neutral-600 dark:text-neutral-300 mb-3">1. What type of project is this?</label>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3 md:gap-4">
+                            <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-xl p-3 md:p-4 text-center hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors">
+                                <input type="radio" name="projectType" class="hidden" value="SaaS Platform" checked>
+                                <span class="text-xs sm:text-sm md:text-base font-normal leading-tight">SaaS Platform</span>
+                            </label>
+                            <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-xl p-3 md:p-4 text-center hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors">
+                                <input type="radio" name="projectType" class="hidden" value="AI System">
+                                <span class="text-xs sm:text-sm md:text-base font-normal leading-tight">AI System</span>
+                            </label>
+                            <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-xl p-3 md:p-4 text-center hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors">
+                                <input type="radio" name="projectType" class="hidden" value="UI/UX Design">
+                                <span class="text-xs sm:text-sm md:text-base font-normal leading-tight">UI/UX Design</span>
+                            </label>
+                            <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-xl p-3 md:p-4 text-center hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors">
+                                <input type="radio" name="projectType" class="hidden" value="Web Development">
+                                <span class="text-xs sm:text-sm md:text-base font-normal leading-tight">Web Development</span>
+                            </label>
+                            <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-xl p-3 md:p-4 text-center hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors">
+                                <input type="radio" name="projectType" class="hidden" value="Landing Page">
+                                <span class="text-xs sm:text-sm md:text-base font-normal leading-tight">Landing Page</span>
+                            </label>
+                            <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-xl p-3 md:p-4 text-center hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors">
+                                <input type="radio" name="projectType" class="hidden" value="Other">
+                                <span class="text-xs sm:text-sm md:text-base font-normal leading-tight">Other</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- ===== STEP 2: Budget ===== -->
+                    <div class="form-step" data-step="2">
+                        <label class="block text-sm md:text-base text-neutral-600 dark:text-neutral-300 mb-3">2. Project Budget Range</label>
+                        <select name="budget" class="w-full bg-yellow-50 dark:bg-neutral-900 border border-yellow-200 dark:border-neutral-700 rounded-xl px-4 py-2.5 md:py-3 focus:outline-none focus:border-orange-400 text-sm md:text-base text-neutral-800 dark:text-white">
+                            <option value="">Select a budget range...</option>
+                            <option value="RM 500 - RM 1,200">RM 500 - RM 1,200</option>
+                            <option value="RM 1,500 - RM 5,000">RM 1,500 - RM 5,000</option>
+                            <option value="RM 5,000 - RM 10,000">RM 5,000 - RM 10,000</option>
+                            <option value="RM 10,000 - RM 25,000">RM 10,000 - RM 25,000</option>
+                            <option value="RM 25,000+">RM 25,000+</option>
+                        </select>
+                        <div class="mt-4">
+                            <label class="block text-sm md:text-base text-neutral-600 dark:text-neutral-300 mb-3">Preferred Payment Method</label>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-3 md:gap-4">
+                                <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-xl p-3 md:p-4 text-center hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors">
+                                    <input type="radio" name="paymentMethod" class="hidden" value="Full Payment" checked>
+                                    <span class="text-xs sm:text-sm md:text-base font-normal">Full Payment</span>
+                                </label>
+                                <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-xl p-3 md:p-4 text-center hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors">
+                                    <input type="radio" name="paymentMethod" class="hidden" value="Installment Plan">
+                                    <span class="text-xs sm:text-sm md:text-base font-normal">Installment Plan</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ===== STEP 3: Vision ===== -->
+                    <div class="form-step" data-step="3">
+                        <label class="block text-sm md:text-base text-neutral-600 dark:text-neutral-300 mb-3">3. Tell us about your vision</label>
+                        <textarea name="vision" rows="6" placeholder="Describe your goals, target audience, and key features..." class="w-full bg-yellow-50 dark:bg-neutral-900 border border-yellow-200 dark:border-neutral-700 rounded-xl px-4 py-2.5 md:py-3 focus:outline-none focus:border-orange-400 text-sm md:text-base text-neutral-800 dark:text-white"></textarea>
+                        <p class="text-xs text-neutral-400 mt-2">The more detail you provide, the better we can prepare for our call.</p>
+                    </div>
+
+                    <!-- ===== STEP 4: Contact Details + Business Info ===== -->
+                    <div class="form-step" data-step="4">
+                        <label class="block text-sm md:text-base text-neutral-600 dark:text-neutral-300 mb-3">4. Contact Details</label>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 mb-4">
+                            <input type="text" name="fullName" placeholder="Full Name *" class="w-full bg-yellow-50 dark:bg-neutral-900 border border-yellow-200 dark:border-neutral-700 rounded-xl px-4 py-2.5 md:py-3 focus:outline-none focus:border-orange-400 text-sm md:text-base text-neutral-800 dark:text-white">
+                            <input type="email" name="email" placeholder="Email Address *" class="w-full bg-yellow-50 dark:bg-neutral-900 border border-yellow-200 dark:border-neutral-700 rounded-xl px-4 py-2.5 md:py-3 focus:outline-none focus:border-orange-400 text-sm md:text-base text-neutral-800 dark:text-white">
+                            <input type="tel" name="phone" placeholder="Phone Number *" class="w-full bg-yellow-50 dark:bg-neutral-900 border border-yellow-200 dark:border-neutral-700 rounded-xl px-4 py-2.5 md:py-3 focus:outline-none focus:border-orange-400 text-sm md:text-base text-neutral-800 dark:text-white">
+                            <input type="text" name="businessName" placeholder="Business Name (Optional)" class="w-full bg-yellow-50 dark:bg-neutral-900 border border-yellow-200 dark:border-neutral-700 rounded-xl px-4 py-2.5 md:py-3 focus:outline-none focus:border-orange-400 text-sm md:text-base text-neutral-800 dark:text-white">
+                        </div>
+                        <div>
+                            <label class="block text-sm md:text-base text-neutral-600 dark:text-neutral-300 mb-3">Business Type</label>
+                            <select name="businessType" class="w-full bg-yellow-50 dark:bg-neutral-900 border border-yellow-200 dark:border-neutral-700 rounded-xl px-4 py-2.5 md:py-3 focus:outline-none focus:border-orange-400 text-sm md:text-base text-neutral-800 dark:text-white">
+                                <option value="">Select business type...</option>
+                                <option value="Individual / Personal">Individual / Personal</option>
+                                <option value="Sole Proprietorship">Sole Proprietorship</option>
+                                <option value="Partnership">Partnership</option>
+                                <option value="Startup">Startup</option>
+                                <option value="Small Business (SME)">Small Business (SME)</option>
+                                <option value="SaaS / Tech Company">SaaS / Tech Company</option>
+                                <option value="Agency / Studio">Agency / Studio</option>
+                                <option value="E-commerce">E-commerce</option>
+                                <option value="Enterprise / Corporation">Enterprise / Corporation</option>
+                                <option value="Non-profit / NGO">Non-profit / NGO</option>
+                                <option value="Educational Institution">Educational Institution</option>
+                                <option value="Government">Government</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- ===== STEP 5: Book A Call ===== -->
+                    <div class="form-step" data-step="5">
+                        <label class="block text-sm md:text-base text-neutral-600 dark:text-neutral-300 mb-3">5. Book A Call</label>
+                        
+                        <div class="space-y-4 md:space-y-6">
+                            <!-- Time Zone -->
+                            <div>
+                                <label class="block text-xs md:text-sm text-neutral-500 dark:text-neutral-400 mb-2">Choose Time Zone</label>
+                                <select name="timezone" id="timezone-select" class="w-full bg-yellow-50 dark:bg-neutral-900 border border-yellow-200 dark:border-neutral-700 rounded-xl px-4 py-2.5 md:py-3 focus:outline-none focus:border-orange-400 text-sm md:text-base text-neutral-800 dark:text-white">
+                                    <option value="">Select your time zone...</option>
+                                    <option value="UTC-12:00 (Baker Island)">UTC-12:00 (Baker Island)</option>
+                                    <option value="UTC-11:00 (American Samoa)">UTC-11:00 (American Samoa)</option>
+                                    <option value="UTC-10:00 (Hawaii)">UTC-10:00 (Hawaii)</option>
+                                    <option value="UTC-09:00 (Alaska)">UTC-09:00 (Alaska)</option>
+                                    <option value="UTC-08:00 (Pacific Time - LA, Vancouver)">UTC-08:00 (Pacific Time - LA, Vancouver)</option>
+                                    <option value="UTC-07:00 (Mountain Time - Denver)">UTC-07:00 (Mountain Time - Denver)</option>
+                                    <option value="UTC-06:00 (Central Time - Chicago, Mexico)">UTC-06:00 (Central Time - Chicago, Mexico)</option>
+                                    <option value="UTC-05:00 (Eastern Time - NY, Miami)">UTC-05:00 (Eastern Time - NY, Miami)</option>
+                                    <option value="UTC-04:00 (Atlantic, Caracas)">UTC-04:00 (Atlantic, Caracas)</option>
+                                    <option value="UTC-03:00 (Buenos Aires, São Paulo)">UTC-03:00 (Buenos Aires, São Paulo)</option>
+                                    <option value="UTC-02:00 (Mid-Atlantic)">UTC-02:00 (Mid-Atlantic)</option>
+                                    <option value="UTC-01:00 (Azores, Cape Verde)">UTC-01:00 (Azores, Cape Verde)</option>
+                                    <option value="UTC+00:00 (London, Lisbon, Dublin)">UTC+00:00 (London, Lisbon, Dublin)</option>
+                                    <option value="UTC+01:00 (Paris, Berlin, Rome, Madrid)">UTC+01:00 (Paris, Berlin, Rome, Madrid)</option>
+                                    <option value="UTC+02:00 (Cairo, Athens, Istanbul)">UTC+02:00 (Cairo, Athens, Istanbul)</option>
+                                    <option value="UTC+03:00 (Moscow, Nairobi, Riyadh)">UTC+03:00 (Moscow, Nairobi, Riyadh)</option>
+                                    <option value="UTC+03:30 (Tehran)">UTC+03:30 (Tehran)</option>
+                                    <option value="UTC+04:00 (Dubai, Baku)">UTC+04:00 (Dubai, Baku)</option>
+                                    <option value="UTC+04:30 (Kabul)">UTC+04:30 (Kabul)</option>
+                                    <option value="UTC+05:00 (Karachi, Tashkent)">UTC+05:00 (Karachi, Tashkent)</option>
+                                    <option value="UTC+05:30 (India - Mumbai, Delhi)">UTC+05:30 (India - Mumbai, Delhi)</option>
+                                    <option value="UTC+05:45 (Kathmandu)">UTC+05:45 (Kathmandu)</option>
+                                    <option value="UTC+06:00 (Dhaka, Almaty)">UTC+06:00 (Dhaka, Almaty)</option>
+                                    <option value="UTC+07:00 (Bangkok, Jakarta, Hanoi)">UTC+07:00 (Bangkok, Jakarta, Hanoi)</option>
+                                    <option value="UTC+08:00 (Malaysia, Singapore, Beijing, Manila)" selected>UTC+08:00 (Malaysia, Singapore, Beijing, Manila)</option>
+                                    <option value="UTC+09:00 (Tokyo, Seoul)">UTC+09:00 (Tokyo, Seoul)</option>
+                                    <option value="UTC+09:30 (Adelaide, Darwin)">UTC+09:30 (Adelaide, Darwin)</option>
+                                    <option value="UTC+10:00 (Sydney, Melbourne, Brisbane)">UTC+10:00 (Sydney, Melbourne, Brisbane)</option>
+                                    <option value="UTC+11:00 (Solomon Islands)">UTC+11:00 (Solomon Islands)</option>
+                                    <option value="UTC+12:00 (Auckland, Fiji)">UTC+12:00 (Auckland, Fiji)</option>
+                                    <option value="UTC+13:00 (Samoa, Tonga)">UTC+13:00 (Samoa, Tonga)</option>
+                                </select>
+                            </div>
+
+                            <!-- Date & Time -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+                                <div>
+                                    <label class="block text-xs md:text-sm text-neutral-500 dark:text-neutral-400 mb-2">Choose Available Date</label>
+                                    <!-- Custom Calendar Trigger -->
+                                    <input type="hidden" name="callDate" id="call-date" value="">
+                                    <button type="button" id="calendar-trigger" class="w-full bg-yellow-50 dark:bg-neutral-900 border border-yellow-200 dark:border-neutral-700 rounded-xl px-4 py-2.5 md:py-3 focus:outline-none focus:border-orange-400 text-sm md:text-base text-neutral-800 dark:text-white text-left flex items-center justify-between cursor-pointer hover:border-orange-300 transition-colors">
+                                        <span id="calendar-display" class="text-neutral-400">Select a date...</span>
+                                        <i data-lucide="calendar" class="w-4 h-4 text-neutral-400 flex-shrink-0 ml-2" stroke-width="1.5"></i>
+                                    </button>
+                                    <p class="text-xs text-neutral-400 mt-1">Past dates are disabled.</p>
+                                </div>
+                                <div>
+                                    <label class="block text-xs md:text-sm text-neutral-500 dark:text-neutral-400 mb-2">Choose Available Time</label>
+                                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-1" id="time-options">
+                                        <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-lg p-2 text-center hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors text-xs md:text-sm">
+                                            <input type="radio" name="callTime" class="hidden" value="09:00 AM">
+                                            <span class="font-normal">09:00 AM</span>
+                                        </label>
+                                        <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-lg p-2 text-center hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors text-xs md:text-sm">
+                                            <input type="radio" name="callTime" class="hidden" value="10:30 AM">
+                                            <span class="font-normal">10:30 AM</span>
+                                        </label>
+                                        <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-lg p-2 text-center hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors text-xs md:text-sm">
+                                            <input type="radio" name="callTime" class="hidden" value="01:00 PM">
+                                            <span class="font-normal">01:00 PM</span>
+                                        </label>
+                                        <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-lg p-2 text-center hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors text-xs md:text-sm">
+                                            <input type="radio" name="callTime" class="hidden" value="03:30 PM">
+                                            <span class="font-normal">03:30 PM</span>
+                                        </label>
+                                        <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-lg p-2 text-center hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors text-xs md:text-sm">
+                                            <input type="radio" name="callTime" class="hidden" value="05:00 PM">
+                                            <span class="font-normal">05:00 PM</span>
+                                        </label>
+                                        <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-lg p-2 text-center hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors text-xs md:text-sm">
+                                            <input type="radio" name="callTime" class="hidden" value="06:00 PM">
+                                            <span class="font-normal">06:00 PM</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Preferred Meeting Method -->
+                            <div>
+                                <label class="block text-xs md:text-sm text-neutral-500 dark:text-neutral-400 mb-3">Choose Preferred Meeting Method</label>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 md:gap-4">
+                                    <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-xl p-3 md:p-4 flex items-center gap-3 hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors">
+                                        <input type="radio" name="meetingMethod" class="hidden" value="Google Meet" checked>
+                                        <i data-lucide="video" class="w-5 h-5 flex-shrink-0"></i>
+                                        <span class="text-xs sm:text-sm md:text-base font-normal">Google Meet</span>
+                                    </label>
+                                    <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-xl p-3 md:p-4 flex items-center gap-3 hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors">
+                                        <input type="radio" name="meetingMethod" class="hidden" value="Facetime Audio">
+                                        <i data-lucide="phone-call" class="w-5 h-5 flex-shrink-0"></i>
+                                        <span class="text-xs sm:text-sm md:text-base font-normal">Facetime Audio</span>
+                                    </label>
+                                    <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-xl p-3 md:p-4 flex items-center gap-3 hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors">
+                                        <input type="radio" name="meetingMethod" class="hidden" value="WhatsApp Text">
+                                        <i data-lucide="message-circle" class="w-5 h-5 flex-shrink-0"></i>
+                                        <span class="text-xs sm:text-sm md:text-base font-normal">WhatsApp Text</span>
+                                    </label>
+                                    <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-xl p-3 md:p-4 flex items-center gap-3 hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors">
+                                        <input type="radio" name="meetingMethod" class="hidden" value="WhatsApp Audio Call">
+                                        <i data-lucide="phone" class="w-5 h-5 flex-shrink-0"></i>
+                                        <span class="text-xs sm:text-sm md:text-base font-normal">WhatsApp Audio Call</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ===== STEP 6: How did you hear about us? ===== -->
+                    <div class="form-step" data-step="6">
+                        <label class="block text-sm md:text-base text-neutral-600 dark:text-neutral-300 mb-3">6. How did you hear about us? <span class="text-orange-500">*</span></label>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3 md:gap-4 mb-4">
+                            <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-xl p-3 md:p-4 text-center hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors">
+                                <input type="radio" name="hearAboutUs" class="hidden" value="Referral">
+                                <span class="text-xs sm:text-sm md:text-base font-normal">Referral</span>
+                            </label>
+                            <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-xl p-3 md:p-4 text-center hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors">
+                                <input type="radio" name="hearAboutUs" class="hidden" value="X / Twitter">
+                                <span class="text-xs sm:text-sm md:text-base font-normal">X / Twitter</span>
+                            </label>
+                            <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-xl p-3 md:p-4 text-center hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors">
+                                <input type="radio" name="hearAboutUs" class="hidden" value="LinkedIn">
+                                <span class="text-xs sm:text-sm md:text-base font-normal">LinkedIn</span>
+                            </label>
+                            <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-xl p-3 md:p-4 text-center hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors">
+                                <input type="radio" name="hearAboutUs" class="hidden" value="AI" id="hear-ai">
+                                <span class="text-xs sm:text-sm md:text-base font-normal">AI</span>
+                            </label>
+                            <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-xl p-3 md:p-4 text-center hover:bg-yellow-50 dark:hover:bg-neutral-700 transition-colors">
+                                <input type="radio" name="hearAboutUs" class="hidden" value="Other" id="hear-other">
+                                <span class="text-xs sm:text-sm md:text-base font-normal">Other</span>
+                            </label>
+                        </div>
+
+                        <!-- Conditional: AI Selection -->
+                        <div id="ai-source-section" class="hidden mt-4 p-4 bg-yellow-50 dark:bg-neutral-900 rounded-xl border border-yellow-200 dark:border-neutral-700">
+                            <label class="block text-xs md:text-sm text-neutral-600 dark:text-neutral-400 mb-3">Which AI platform? <span class="text-orange-500">*</span></label>
+                            <div class="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3">
+                                <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-lg p-2 md:p-3 text-center hover:bg-yellow-100 dark:hover:bg-neutral-700 transition-colors text-xs md:text-sm">
+                                    <input type="radio" name="aiSource" class="hidden" value="ChatGPT">
+                                    <span class="font-normal">ChatGPT</span>
+                                </label>
+                                <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-lg p-2 md:p-3 text-center hover:bg-yellow-100 dark:hover:bg-neutral-700 transition-colors text-xs md:text-sm">
+                                    <input type="radio" name="aiSource" class="hidden" value="Grok">
+                                    <span class="font-normal">Grok</span>
+                                </label>
+                                <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-lg p-2 md:p-3 text-center hover:bg-yellow-100 dark:hover:bg-neutral-700 transition-colors text-xs md:text-sm">
+                                    <input type="radio" name="aiSource" class="hidden" value="Claude">
+                                    <span class="font-normal">Claude</span>
+                                </label>
+                                <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-lg p-2 md:p-3 text-center hover:bg-yellow-100 dark:hover:bg-neutral-700 transition-colors text-xs md:text-sm">
+                                    <input type="radio" name="aiSource" class="hidden" value="Gemini">
+                                    <span class="font-normal">Gemini</span>
+                                </label>
+                                <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-lg p-2 md:p-3 text-center hover:bg-yellow-100 dark:hover:bg-neutral-700 transition-colors text-xs md:text-sm">
+                                    <input type="radio" name="aiSource" class="hidden" value="Z.ai">
+                                    <span class="font-normal">Z.ai</span>
+                                </label>
+                                <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-lg p-2 md:p-3 text-center hover:bg-yellow-100 dark:hover:bg-neutral-700 transition-colors text-xs md:text-sm">
+                                    <input type="radio" name="aiSource" class="hidden" value="Dola AI">
+                                    <span class="font-normal">Dola AI</span>
+                                </label>
+                                <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-lg p-2 md:p-3 text-center hover:bg-yellow-100 dark:hover:bg-neutral-700 transition-colors text-xs md:text-sm">
+                                    <input type="radio" name="aiSource" class="hidden" value="ByteDance">
+                                    <span class="font-normal">ByteDance</span>
+                                </label>
+                                <label class="option-card cursor-pointer border border-yellow-200 dark:border-neutral-600 rounded-lg p-2 md:p-3 text-center hover:bg-yellow-100 dark:hover:bg-neutral-700 transition-colors text-xs md:text-sm">
+                                    <input type="radio" name="aiSource" class="hidden" value="Custom AI" id="ai-custom">
+                                    <span class="font-normal">Custom AI</span>
+                                </label>
+                            </div>
+                            <div id="custom-ai-input" class="hidden mt-3">
+                                <input type="text" name="customAIName" placeholder="Enter custom AI name..." class="w-full bg-white dark:bg-neutral-800 border border-yellow-200 dark:border-neutral-700 rounded-lg px-4 py-2.5 focus:outline-none focus:border-orange-400 text-sm md:text-base text-neutral-800 dark:text-white">
+                            </div>
+                        </div>
+
+                        <!-- Conditional: Other Selection -->
+                        <div id="other-source-section" class="hidden mt-4 p-4 bg-yellow-50 dark:bg-neutral-900 rounded-xl border border-yellow-200 dark:border-neutral-700">
+                            <label class="block text-xs md:text-sm text-neutral-600 dark:text-neutral-400 mb-2">Please specify where you heard about us <span class="text-orange-500">*</span></label>
+                            <input type="text" name="customOtherSource" placeholder="E.g., Friend, Google search, Blog, Podcast..." class="w-full bg-white dark:bg-neutral-800 border border-yellow-200 dark:border-neutral-700 rounded-lg px-4 py-2.5 focus:outline-none focus:border-orange-400 text-sm md:text-base text-neutral-800 dark:text-white">
+                        </div>
+                    </div>
+
+                    <!-- ===== Navigation Buttons ===== -->
+                    <div class="flex justify-between items-center pt-4 md:pt-6 border-t border-yellow-100 dark:border-neutral-700 gap-2 sm:gap-4">
+                        <button type="button" id="prev-btn" class="px-4 sm:px-5 md:px-6 py-2.5 md:py-3 rounded-full border border-neutral-300 dark:border-neutral-600 text-xs sm:text-sm md:text-base font-normal text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-colors disabled:opacity-30 disabled:cursor-not-allowed flex-shrink-0">
+                            ← Previous
+                        </button>
+                        <button type="button" id="next-btn" class="flex-1 sm:flex-none px-4 sm:px-6 md:px-8 py-2.5 md:py-3 rounded-full bg-neutral-800 dark:bg-yellow-400 text-white dark:text-neutral-900 text-xs sm:text-sm md:text-base font-normal hover:bg-neutral-700 dark:hover:bg-yellow-300 transition-colors shadow-lg">
+                            Next →
+                        </button>
+                        <button type="submit" id="submit-btn" class="hidden flex-1 sm:flex-none px-4 sm:px-6 md:px-8 py-2.5 md:py-3 rounded-full bg-orange-500 text-white text-xs sm:text-sm md:text-base font-normal hover:bg-orange-600 transition-colors shadow-lg">
+                            Submit Project Request ✓
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Success Message -->
+                <div id="form-success" class="hidden text-center py-8 md:py-12">
+                    <div class="w-16 h-16 md:w-20 md:h-20 mx-auto bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mb-4 md:mb-6 animate-scaleIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500 feather feather-check-circle">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline class="check-path" points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-normal text-neutral-800 dark:text-white mb-2 animate-fadeInUp">Project Request Submitted!</h3>
+                    <p class="text-sm md:text-base text-neutral-500 dark:text-neutral-400 animate-fadeInUp">We'll review your request and reach out within 24 hours to confirm your consultation.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ LEGAL HUB PAGE ============ -->
+        <div id="legal" class="page-content py-12 md:py-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+            <div class="max-w-5xl mx-auto">
+                <nav class="breadcrumb flex items-center gap-2 text-sm md:text-base text-neutral-500 dark:text-neutral-400 mb-6">
+                    <a href="/" data-link="/" class="hover:text-orange-500 transition-colors">Home</a>
+                    <span>/</span>
+                    <span class="text-neutral-800 dark:text-neutral-200">Legal & Policies</span>
+                </nav>
+
+                <span class="text-sm md:text-lg font-normal italic text-orange-500 capitalize">Legal</span>
+                <h1 class="text-2xl md:text-6xl lg:text-7xl font-normal tracking-tight mt-3 mb-4 text-neutral-800 dark:text-white">Legal & Policies</h1>
+                <p class="text-sm md:text-lg text-neutral-500 dark:text-neutral-400 mb-6">Last Updated: 22 June 2026</p>
+                <p class="text-base md:text-xl text-neutral-600 dark:text-neutral-300 mb-10 md:mb-16 max-w-3xl">Please review our legal policies below. These documents govern your use of AfterSolves services and website.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                    <a href="/privacy" data-link="/privacy" class="group bg-white dark:bg-neutral-800 p-6 md:p-10 rounded-[1.5rem] md:rounded-[2rem] border border-yellow-200 dark:border-neutral-700 hover:shadow-xl hover:-translate-y-1 transition-all">
+                        <div class="w-12 h-12 md:w-14 md:h-14 bg-yellow-100 dark:bg-yellow-900/30 rounded-full flex items-center justify-center text-orange-500 mb-4 md:mb-6">
+                            <i data-lucide="shield" class="w-6 h-6 md:w-7 md:h-7"></i>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-medium text-neutral-800 dark:text-white mb-2">Privacy Policy</h3>
+                        <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-400 mb-4">How we collect, use, store, disclose, and protect your information when you use our services.</p>
+                        <span class="text-sm md:text-base text-orange-500 flex items-center gap-2">Read Policy <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+                    </a>
+                    
+                    <a href="/terms" data-link="/terms" class="group bg-white dark:bg-neutral-800 p-6 md:p-10 rounded-[1.5rem] md:rounded-[2rem] border border-yellow-200 dark:border-neutral-700 hover:shadow-xl hover:-translate-y-1 transition-all">
+                        <div class="w-12 h-12 md:w-14 md:h-14 bg-yellow-100 dark:bg-yellow-900/30 rounded-full flex items-center justify-center text-orange-500 mb-4 md:mb-6">
+                            <i data-lucide="file-text" class="w-6 h-6 md:w-7 md:h-7"></i>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-medium text-neutral-800 dark:text-white mb-2">Terms & Conditions</h3>
+                        <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-400 mb-4">The terms and conditions governing your use of our services and website.</p>
+                        <span class="text-sm md:text-base text-orange-500 flex items-center gap-2">Read Terms <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+                    </a>
+                    
+                    <a href="/refund" data-link="/refund" class="group bg-white dark:bg-neutral-800 p-6 md:p-10 rounded-[1.5rem] md:rounded-[2rem] border border-yellow-200 dark:border-neutral-700 hover:shadow-xl hover:-translate-y-1 transition-all">
+                        <div class="w-12 h-12 md:w-14 md:h-14 bg-yellow-100 dark:bg-yellow-900/30 rounded-full flex items-center justify-center text-orange-500 mb-4 md:mb-6">
+                            <i data-lucide="rotate-ccw" class="w-6 h-6 md:w-7 md:h-7"></i>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-medium text-neutral-800 dark:text-white mb-2">Refund Policy</h3>
+                        <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-400 mb-4">Our refund and cancellation policy for digital services and development work.</p>
+                        <span class="text-sm md:text-base text-orange-500 flex items-center gap-2">Read Policy <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+                    </a>
+                    
+                    <a href="/payment" data-link="/payment" class="group bg-white dark:bg-neutral-800 p-6 md:p-10 rounded-[1.5rem] md:rounded-[2rem] border border-yellow-200 dark:border-neutral-700 hover:shadow-xl hover:-translate-y-1 transition-all">
+                        <div class="w-12 h-12 md:w-14 md:h-14 bg-yellow-100 dark:bg-yellow-900/30 rounded-full flex items-center justify-center text-orange-500 mb-4 md:mb-6">
+                            <i data-lucide="credit-card" class="w-6 h-6 md:w-7 md:h-7"></i>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-medium text-neutral-800 dark:text-white mb-2">Payment Policy</h3>
+                        <p class="text-sm md:text-base text-neutral-600 dark:text-neutral-400 mb-4">Payment options, installment plans, late fees, and billing information.</p>
+                        <span class="text-sm md:text-base text-orange-500 flex items-center gap-2">Read Policy <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+                    </a>
+                </div>
+                
+                <div class="bg-yellow-400 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 text-neutral-900 shadow-lg mt-8 md:mt-12">
+                    <h2 class="text-2xl md:text-4xl font-normal tracking-tight mb-6">Contact Information</h2>
+                    <div class="space-y-3">
+                        <p class="text-lg md:text-xl font-medium">AfterSolves</p>
+                        <p>Website: <a href="https://aftersolves.com" class="underline hover:text-orange-600 transition-colors">https://aftersolves.com</a></p>
+                        <p>Email: <a href="mailto:support@aftersolves.com" class="underline hover:text-orange-600 transition-colors">support@aftersolves.com</a></p>
+                    </div>
+                    <p class="text-sm md:text-base mt-6 leading-relaxed">For legal, privacy, billing, or support inquiries, please contact us using the information above.</p>
+                    <div class="mt-8 pt-6 border-t border-neutral-900/20">
+                        <p class="text-sm md:text-base">© 2026 AfterSolves. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ PRIVACY POLICY PAGE ============ -->
+        <div id="privacy" class="page-content py-12 md:py-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+            <div class="max-w-4xl mx-auto">
+                <nav class="breadcrumb flex items-center gap-2 text-sm md:text-base text-neutral-500 dark:text-neutral-400 mb-6">
+                    <a href="/" data-link="/" class="hover:text-orange-500 transition-colors">Home</a>
+                    <span>/</span>
+                    <a href="/legal" data-link="/legal" class="hover:text-orange-500 transition-colors">Legal</a>
+                    <span>/</span>
+                    <span class="text-neutral-800 dark:text-neutral-200">Privacy Policy</span>
+                </nav>
+
+                <span class="text-sm md:text-lg font-normal italic text-orange-500 capitalize">Legal</span>
+                <h1 class="text-2xl md:text-5xl lg:text-6xl font-normal tracking-tight mt-3 mb-4 text-neutral-800 dark:text-white">Privacy Policy</h1>
+                <p class="text-sm md:text-lg text-neutral-500 dark:text-neutral-400 mb-6">Last Updated: 22 June 2026</p>
+
+                <div id="privacy-content" class="space-y-8 md:space-y-12">
+                    
+                    <div class="flex flex-wrap gap-2 md:gap-3 pb-4 border-b border-yellow-200 dark:border-neutral-700">
+                        <a href="#privacy-intro" class="px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm bg-yellow-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-yellow-200 dark:hover:bg-neutral-700 transition-colors">Introduction</a>
+                        <a href="#privacy-collect" class="px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm bg-yellow-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-yellow-200 dark:hover:bg-neutral-700 transition-colors">Information We Collect</a>
+                        <a href="#privacy-use" class="px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm bg-yellow-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-yellow-200 dark:hover:bg-neutral-700 transition-colors">How We Use</a>
+                        <a href="#privacy-sharing" class="px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm bg-yellow-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-yellow-200 dark:hover:bg-neutral-700 transition-colors">Information Sharing</a>
+                        <a href="#privacy-security" class="px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm bg-yellow-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-yellow-200 dark:hover:bg-neutral-700 transition-colors">Data Security</a>
+                        <a href="#privacy-rights" class="px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm bg-yellow-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-yellow-200 dark:hover:bg-neutral-700 transition-colors">User Rights</a>
+                    </div>
+
+                    <section id="privacy-intro" class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">1. Introduction</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>Welcome to AfterSolves ("AfterSolves", "Company", "we", "our", or "us").</p>
+                            <p>This Privacy Policy explains how we collect, use, store, disclose, and protect your information when you visit our website, purchase our services, or interact with our platform.</p>
+                            <p>By using our website and services, you agree to the practices described in this Privacy Policy.</p>
+                        </div>
+                    </section>
+
+                    <section id="privacy-collect" class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">2. Information We Collect</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <h3 class="text-base md:text-lg font-medium text-orange-500 mb-2">Personal Information</h3>
+                            <p>We may collect information including:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>Full Name</li>
+                                <li>Email Address</li>
+                                <li>Phone Number</li>
+                                <li>Company Name</li>
+                                <li>Billing Information</li>
+                                <li>Project Requirements</li>
+                                <li>Communication Records</li>
+                                <li>Information submitted through forms, support requests, consultations, or service orders</li>
+                            </ul>
+                            
+                            <h3 class="text-base md:text-lg font-medium text-orange-500 mb-2 mt-4">Technical Information</h3>
+                            <p>We may automatically collect:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>IP Address</li>
+                                <li>Browser Information</li>
+                                <li>Device Information</li>
+                                <li>Operating System</li>
+                                <li>Website Usage Data</li>
+                                <li>Date and Time of Access</li>
+                                <li>Referral Sources</li>
+                            </ul>
+
+                            <h3 class="text-base md:text-lg font-medium text-orange-500 mb-2 mt-4">Cookies and Tracking Technologies</h3>
+                            <p>We use cookies and similar technologies to:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>Improve website functionality</li>
+                                <li>Remember user preferences</li>
+                                <li>Analyze website performance</li>
+                                <li>Enhance security</li>
+                                <li>Improve user experience</li>
+                            </ul>
+                            <p class="mt-2">Users may disable cookies through browser settings, though some features may become unavailable.</p>
+                        </div>
+                    </section>
+
+                    <section id="privacy-use" class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">3. How We Use Information</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>We use information to:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>Provide requested services</li>
+                                <li>Process orders and payments</li>
+                                <li>Deliver customer support</li>
+                                <li>Improve products and services</li>
+                                <li>Analyze website performance</li>
+                                <li>Prevent fraud and abuse</li>
+                                <li>Maintain security</li>
+                                <li>Send service-related notifications</li>
+                                <li>Send promotional communications with consent</li>
+                                <li>Comply with legal obligations</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="privacy-sharing" class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">4. Information Sharing</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>We do not sell personal information.</p>
+                            <p>Information may be shared with:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>Payment processors</li>
+                                <li>Hosting providers</li>
+                                <li>Cloud service providers</li>
+                                <li>Analytics providers</li>
+                                <li>Legal and professional advisers</li>
+                                <li>Government authorities when legally required</li>
+                            </ul>
+                            <p class="mt-2">Third-party providers may only use information as necessary to perform their services.</p>
+                        </div>
+                    </section>
+
+                    <section id="privacy-security" class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">5. Data Security</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>We implement commercially reasonable security measures to protect personal information.</p>
+                            <p>However, no electronic transmission or storage system can be guaranteed to be completely secure. Users acknowledge and accept this risk.</p>
+                        </div>
+                    </section>
+
+                    <section class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">6. Data Retention</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>Information may be retained for as long as necessary to:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>Provide services</li>
+                                <li>Comply with legal requirements</li>
+                                <li>Resolve disputes</li>
+                                <li>Enforce agreements</li>
+                            </ul>
+                            <p class="mt-2">After this period, data may be deleted, anonymized, or archived.</p>
+                        </div>
+                    </section>
+
+                    <section id="privacy-rights" class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">7. User Rights</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>Subject to applicable laws, users may request to:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>Access their information</li>
+                                <li>Correct inaccurate information</li>
+                                <li>Delete information</li>
+                                <li>Withdraw consent</li>
+                                <li>Request data portability</li>
+                            </ul>
+                            <p class="mt-2">Requests may be submitted through our contact information.</p>
+                        </div>
+                    </section>
+
+                    <section class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">8. Children's Privacy</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>Our services are not intended for individuals under 13 years of age.</p>
+                            <p>We do not knowingly collect information from children.</p>
+                        </div>
+                    </section>
+
+                    <section class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">9. Third-Party Websites</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>Our website may contain links to third-party websites.</p>
+                            <p>AfterSolves is not responsible for the privacy practices, content, or security of external websites.</p>
+                        </div>
+                    </section>
+
+                    <section class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">10. Policy Updates</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>We reserve the right to modify this Privacy Policy at any time.</p>
+                            <p>Changes become effective immediately upon publication.</p>
+                            <p>Continued use of our services constitutes acceptance of any updates.</p>
+                        </div>
+                    </section>
+
+                    <div class="bg-yellow-400 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 text-neutral-900 shadow-lg">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight mb-4">Contact Information</h2>
+                        <div class="space-y-2">
+                            <p class="text-lg md:text-xl font-medium">AfterSolves</p>
+                            <p>Website: <a href="https://aftersolves.com" class="underline hover:text-orange-600 transition-colors">https://aftersolves.com</a></p>
+                            <p>Email: <a href="mailto:support@aftersolves.com" class="underline hover:text-orange-600 transition-colors">support@aftersolves.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="/legal" data-link="/legal" class="inline-flex items-center gap-2 text-sm md:text-base text-orange-500 hover:text-orange-600 transition-colors">
+                            <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Legal & Policies
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ TERMS & CONDITIONS PAGE ============ -->
+        <div id="terms" class="page-content py-12 md:py-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+            <div class="max-w-4xl mx-auto">
+                <nav class="breadcrumb flex items-center gap-2 text-sm md:text-base text-neutral-500 dark:text-neutral-400 mb-6">
+                    <a href="/" data-link="/" class="hover:text-orange-500 transition-colors">Home</a>
+                    <span>/</span>
+                    <a href="/legal" data-link="/legal" class="hover:text-orange-500 transition-colors">Legal</a>
+                    <span>/</span>
+                    <span class="text-neutral-800 dark:text-neutral-200">Terms & Conditions</span>
+                </nav>
+
+                <span class="text-sm md:text-lg font-normal italic text-orange-500 capitalize">Legal</span>
+                <h1 class="text-2xl md:text-5xl lg:text-6xl font-normal tracking-tight mt-3 mb-4 text-neutral-800 dark:text-white">Terms & Conditions</h1>
+                <p class="text-sm md:text-lg text-neutral-500 dark:text-neutral-400 mb-6">Last Updated: 22 June 2026</p>
+
+                <div id="terms-content" class="space-y-8 md:space-y-12">
+                    
+                    <div class="flex flex-wrap gap-2 md:gap-3 pb-4 border-b border-yellow-200 dark:border-neutral-700">
+                        <a href="#terms-acceptance" class="px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm bg-yellow-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-yellow-200 dark:hover:bg-neutral-700 transition-colors">Acceptance</a>
+                        <a href="#terms-services" class="px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm bg-yellow-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-yellow-200 dark:hover:bg-neutral-700 transition-colors">Services</a>
+                        <a href="#terms-client" class="px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm bg-yellow-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-yellow-200 dark:hover:bg-neutral-700 transition-colors">Client Responsibilities</a>
+                        <a href="#terms-ip" class="px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm bg-yellow-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-yellow-200 dark:hover:bg-neutral-700 transition-colors">Intellectual Property</a>
+                        <a href="#terms-liability" class="px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm bg-yellow-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-yellow-200 dark:hover:bg-neutral-700 transition-colors">Liability</a>
+                    </div>
+
+                    <section id="terms-acceptance" class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">1. Acceptance of Terms</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>By accessing, browsing, purchasing, or using any service provided by AfterSolves, you agree to be legally bound by these Terms and Conditions.</p>
+                            <p>If you do not agree, you must discontinue use of our website and services.</p>
+                        </div>
+                    </section>
+
+                    <section id="terms-services" class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">2. Services</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>AfterSolves provides services including but not limited to:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>Website Design</li>
+                                <li>Website Development</li>
+                                <li>Landing Page Development</li>
+                                <li>SaaS Development</li>
+                                <li>Web Application Development</li>
+                                <li>AI Integration</li>
+                                <li>Cloud Infrastructure Setup</li>
+                                <li>Technical Consulting</li>
+                                <li>Maintenance and Support</li>
+                            </ul>
+                            <p class="mt-2">Service features, deliverables, pricing, and availability may change at any time without notice.</p>
+                        </div>
+                    </section>
+
+                    <section id="terms-client" class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">3. Client Responsibilities</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>Clients agree to:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>Provide accurate information</li>
+                                <li>Supply required content and materials</li>
+                                <li>Respond to requests promptly</li>
+                                <li>Approve deliverables within reasonable timeframes</li>
+                                <li>Fulfill payment obligations</li>
+                            </ul>
+                            <p class="mt-2">Delays caused by the client may affect project timelines.</p>
+                        </div>
+                    </section>
+
+                    <section class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">4. Project Scope</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>Projects are limited to the scope outlined in quotations, invoices, proposals, agreements, or service packages.</p>
+                            <p>Additional work outside the agreed scope may incur additional charges.</p>
+                        </div>
+                    </section>
+
+                    <section class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">5. Revisions</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>Each project includes revisions as specified in the selected package or agreement.</p>
+                            <p>Additional revisions may be billed separately.</p>
+                        </div>
+                    </section>
+
+                    <section class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">6. Delivery Timelines</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>Delivery timelines are estimates only.</p>
+                            <p>Completion dates depend on project complexity, client responsiveness, technical requirements, and third-party services.</p>
+                            <p>AfterSolves does not guarantee specific completion dates.</p>
+                        </div>
+                    </section>
+
+                    <section class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">7. Pricing</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>All prices are displayed in Malaysian Ringgit (MYR) unless otherwise stated.</p>
+                            <p>Prices may be changed at any time without prior notice.</p>
+                        </div>
+                    </section>
+
+                    <section id="terms-ip" class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">8. Intellectual Property</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>Clients retain ownership of materials they provide.</p>
+                            <p>Upon full payment, ownership of completed deliverables transfers to the client.</p>
+                            <p>Until full payment is received, all project assets, designs, source code, systems, and deliverables remain the property of AfterSolves.</p>
+                            <p>AfterSolves retains ownership of proprietary frameworks, templates, tools, libraries, and development methodologies used during project creation.</p>
+                        </div>
+                    </section>
+
+                    <section class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">9. Portfolio Rights</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>AfterSolves may display completed projects in:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>Portfolios</li>
+                                <li>Marketing Materials</li>
+                                <li>Social Media</li>
+                                <li>Case Studies</li>
+                                <li>Presentations</li>
+                            </ul>
+                            <p class="mt-2">Unless otherwise agreed in writing.</p>
+                        </div>
+                    </section>
+
+                    <section class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">10. Service Suspension</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>We reserve the right to suspend or terminate services if:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>Payments are overdue</li>
+                                <li>Terms are violated</li>
+                                <li>Fraudulent activity is suspected</li>
+                                <li>Services are abused</li>
+                            </ul>
+                            <p class="mt-2">Outstanding balances remain payable after termination.</p>
+                        </div>
+                    </section>
+
+                    <section id="terms-liability" class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">11. Limitation of Liability</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>To the fullest extent permitted by law, AfterSolves shall not be liable for:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>Loss of profits</li>
+                                <li>Business interruption</li>
+                                <li>Data loss</li>
+                                <li>Indirect damages</li>
+                                <li>Consequential damages</li>
+                                <li>Third-party service failures</li>
+                            </ul>
+                            <p class="mt-2">Total liability shall not exceed the amount paid by the client for the service giving rise to the claim.</p>
+                        </div>
+                    </section>
+
+                    <section class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">12. Indemnification</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>Clients agree to indemnify and hold harmless AfterSolves from any claims, damages, liabilities, losses, costs, or expenses arising from misuse of services or violation of these Terms.</p>
+                        </div>
+                    </section>
+
+                    <section class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">13. Force Majeure</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>AfterSolves shall not be liable for delays or failures caused by events beyond reasonable control, including:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>Natural disasters</li>
+                                <li>Internet outages</li>
+                                <li>Government actions</li>
+                                <li>Cyberattacks</li>
+                                <li>Infrastructure failures</li>
+                                <li>Third-party provider outages</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">14. Governing Law</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>These Terms are governed by the laws of Malaysia.</p>
+                            <p>Any disputes shall be subject to the exclusive jurisdiction of Malaysian courts.</p>
+                        </div>
+                    </section>
+
+                    <section class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">15. Changes to Terms</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>AfterSolves may update these Terms at any time without prior notice.</p>
+                            <p>Continued use of our services constitutes acceptance of updated Terms.</p>
+                        </div>
+                    </section>
+
+                    <div class="bg-yellow-400 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 text-neutral-900 shadow-lg">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight mb-4">Contact Information</h2>
+                        <div class="space-y-2">
+                            <p class="text-lg md:text-xl font-medium">AfterSolves</p>
+                            <p>Website: <a href="https://aftersolves.com" class="underline hover:text-orange-600 transition-colors">https://aftersolves.com</a></p>
+                            <p>Email: <a href="mailto:support@aftersolves.com" class="underline hover:text-orange-600 transition-colors">support@aftersolves.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="/legal" data-link="/legal" class="inline-flex items-center gap-2 text-sm md:text-base text-orange-500 hover:text-orange-600 transition-colors">
+                            <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Legal & Policies
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ REFUND POLICY PAGE ============ -->
+        <div id="refund" class="page-content py-12 md:py-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+            <div class="max-w-4xl mx-auto">
+                <nav class="breadcrumb flex items-center gap-2 text-sm md:text-base text-neutral-500 dark:text-neutral-400 mb-6">
+                    <a href="/" data-link="/" class="hover:text-orange-500 transition-colors">Home</a>
+                    <span>/</span>
+                    <a href="/legal" data-link="/legal" class="hover:text-orange-500 transition-colors">Legal</a>
+                    <span>/</span>
+                    <span class="text-neutral-800 dark:text-neutral-200">Refund Policy</span>
+                </nav>
+
+                <span class="text-sm md:text-lg font-normal italic text-orange-500 capitalize">Legal</span>
+                <h1 class="text-2xl md:text-5xl lg:text-6xl font-normal tracking-tight mt-3 mb-4 text-neutral-800 dark:text-white">Refund Policy</h1>
+                <p class="text-sm md:text-lg text-neutral-500 dark:text-neutral-400 mb-6">Last Updated: 22 June 2026</p>
+
+                <div id="refund-content" class="space-y-8 md:space-y-12">
+                    
+                    <div class="flex flex-wrap gap-2 md:gap-3 pb-4 border-b border-yellow-200 dark:border-neutral-700">
+                        <a href="#refund-general" class="px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm bg-yellow-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-yellow-200 dark:hover:bg-neutral-700 transition-colors">General Policy</a>
+                        <a href="#refund-eligible" class="px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm bg-yellow-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-yellow-200 dark:hover:bg-neutral-700 transition-colors">Eligible Refunds</a>
+                        <a href="#refund-partial" class="px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm bg-yellow-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-yellow-200 dark:hover:bg-neutral-700 transition-colors">Partial Refunds</a>
+                        <a href="#refund-nonrefundable" class="px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm bg-yellow-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-yellow-200 dark:hover:bg-neutral-700 transition-colors">Non-Refundable Items</a>
+                        <a href="#refund-request" class="px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm bg-yellow-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-yellow-200 dark:hover:bg-neutral-700 transition-colors">Refund Requests</a>
+                    </div>
+
+                    <section id="refund-general" class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">1. General Policy</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>Due to the custom nature of digital services, all payments are generally non-refundable once work has commenced.</p>
+                        </div>
+                    </section>
+
+                    <section id="refund-eligible" class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">2. Eligible Refund Situations</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>Refunds may be considered if:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>Services are canceled before work begins.</li>
+                                <li>AfterSolves is unable to provide the purchased service.</li>
+                                <li>Applicable consumer protection laws require a refund.</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="refund-partial" class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">3. Partial Refunds</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>Partial refunds may be issued when:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>A project is partially completed.</li>
+                                <li>The client requests project termination.</li>
+                            </ul>
+                            <p class="mt-2">Completed work, consultation time, development work, designs, and administrative costs may be deducted from any refund.</p>
+                        </div>
+                    </section>
+
+                    <section class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">4. Installment Refunds</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>For installment plans:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>Only undelivered portions may be eligible for refund.</li>
+                                <li>Administrative and processing fees are non-refundable.</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="refund-nonrefundable" class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">5. Non-Refundable Items</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>The following are generally non-refundable once purchased:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>Domain registrations</li>
+                                <li>Hosting services</li>
+                                <li>Cloud services</li>
+                                <li>Third-party software</li>
+                                <li>API credits</li>
+                                <li>Subscription fees</li>
+                                <li>Completed development work</li>
+                                <li>Completed design work</li>
+                                <li>Consultation services</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="refund-request" class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">6. Refund Requests</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>Refund requests must be submitted in writing.</p>
+                            <p>Requests should include:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>Client name</li>
+                                <li>Project reference</li>
+                                <li>Reason for request</li>
+                                <li>Supporting information</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">7. Review Period</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>Refund requests are typically reviewed within seven (7) business days.</p>
+                        </div>
+                    </section>
+
+                    <section class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">8. Final Decision</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>Refund decisions are made at the sole discretion of AfterSolves, subject to applicable laws.</p>
+                            <p>Approved refunds will be issued using the original payment method whenever possible.</p>
+                        </div>
+                    </section>
+
+                    <div class="bg-yellow-400 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 text-neutral-900 shadow-lg">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight mb-4">Contact Information</h2>
+                        <div class="space-y-2">
+                            <p class="text-lg md:text-xl font-medium">AfterSolves</p>
+                            <p>Website: <a href="https://aftersolves.com" class="underline hover:text-orange-600 transition-colors">https://aftersolves.com</a></p>
+                            <p>Email: <a href="mailto:support@aftersolves.com" class="underline hover:text-orange-600 transition-colors">support@aftersolves.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="/legal" data-link="/legal" class="inline-flex items-center gap-2 text-sm md:text-base text-orange-500 hover:text-orange-600 transition-colors">
+                            <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Legal & Policies
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ PAYMENT POLICY PAGE ============ -->
+        <div id="payment" class="page-content py-12 md:py-24 px-4 md:px-12 max-w-screen-2xl mx-auto">
+            <div class="max-w-4xl mx-auto">
+                <nav class="breadcrumb flex items-center gap-2 text-sm md:text-base text-neutral-500 dark:text-neutral-400 mb-6">
+                    <a href="/" data-link="/" class="hover:text-orange-500 transition-colors">Home</a>
+                    <span>/</span>
+                    <a href="/legal" data-link="/legal" class="hover:text-orange-500 transition-colors">Legal</a>
+                    <span>/</span>
+                    <span class="text-neutral-800 dark:text-neutral-200">Payment Policy</span>
+                </nav>
+
+                <span class="text-sm md:text-lg font-normal italic text-orange-500 capitalize">Legal</span>
+                <h1 class="text-2xl md:text-5xl lg:text-6xl font-normal tracking-tight mt-3 mb-4 text-neutral-800 dark:text-white">Payment Policy</h1>
+                <p class="text-sm md:text-lg text-neutral-500 dark:text-neutral-400 mb-6">Last Updated: 22 June 2026</p>
+
+                <div id="payment-content" class="space-y-8 md:space-y-12">
+                    
+                    <div class="flex flex-wrap gap-2 md:gap-3 pb-4 border-b border-yellow-200 dark:border-neutral-700">
+                        <a href="#payment-options" class="px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm bg-yellow-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-yellow-200 dark:hover:bg-neutral-700 transition-colors">Payment Options</a>
+                        <a href="#payment-installment" class="px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm bg-yellow-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-yellow-200 dark:hover:bg-neutral-700 transition-colors">Installment Pricing</a>
+                        <a href="#payment-schedule" class="px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm bg-yellow-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-yellow-200 dark:hover:bg-neutral-700 transition-colors">Payment Schedule</a>
+                        <a href="#payment-late" class="px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm bg-yellow-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-yellow-200 dark:hover:bg-neutral-700 transition-colors">Late Payment Fees</a>
+                        <a href="#payment-ownership" class="px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm bg-yellow-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-yellow-200 dark:hover:bg-neutral-700 transition-colors">Ownership</a>
+                    </div>
+
+                    <section id="payment-options" class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">1. Payment Options</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>AfterSolves may offer:</p>
+                            <h3 class="text-base md:text-lg font-medium text-orange-500 mb-1 mt-3">Full Payment</h3>
+                            <p>Clients who choose full payment may receive the lowest available pricing.</p>
+                            <h3 class="text-base md:text-lg font-medium text-orange-500 mb-1 mt-3">Installment Plans</h3>
+                            <p>Clients may choose to divide payments into smaller monthly installments.</p>
+                        </div>
+                    </section>
+
+                    <section id="payment-installment" class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">2. Installment Pricing</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>Installment plans may result in a higher total payable amount than full payment.</p>
+                            <p>This difference covers:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>Administrative costs</li>
+                                <li>Payment management</li>
+                                <li>Risk management</li>
+                                <li>Flexible payment arrangements</li>
+                            </ul>
+                            <p class="mt-2">Installment plans are not loans and do not involve interest-based financing.</p>
+                        </div>
+                    </section>
+
+                    <section id="payment-schedule" class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">3. Payment Schedule</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>Payments must be made according to the agreed schedule.</p>
+                            <p>Failure to make payments may result in:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>Service suspension</li>
+                                <li>Restricted access</li>
+                                <li>Delayed delivery</li>
+                                <li>Account limitations</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="payment-late" class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">4. Late Payment Fees</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>Payments overdue by more than three (3) days may incur a late payment fee of RM10 per month.</p>
+                            <p>Additional recovery actions may be taken if balances remain unpaid.</p>
+                        </div>
+                    </section>
+
+                    <section id="payment-ownership" class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">5. Ownership During Installments</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>All websites, systems, source code, designs, and digital assets remain the property of AfterSolves until all outstanding balances have been paid in full.</p>
+                        </div>
+                    </section>
+
+                    <section class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">6. Early Settlement</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>Clients may settle remaining installment balances at any time without penalty.</p>
+                        </div>
+                    </section>
+
+                    <section class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">7. Cancellation of Installment Plans</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>If a client cancels an installment arrangement:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>Remaining balances may become immediately payable.</li>
+                                <li>Services may be suspended.</li>
+                                <li>Ownership transfer may be withheld until payment completion.</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="bg-white dark:bg-neutral-800 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 border border-yellow-200 dark:border-neutral-700 shadow-sm">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight text-neutral-800 dark:text-white mb-4">8. Pricing Transparency</h2>
+                        <div class="space-y-4 text-sm md:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed">
+                            <p>All pricing will be disclosed before purchase whenever reasonably possible.</p>
+                        </div>
+                    </section>
+
+                    <div class="bg-yellow-400 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-12 text-neutral-900 shadow-lg">
+                        <h2 class="text-2xl md:text-3xl font-normal tracking-tight mb-4">Contact Information</h2>
+                        <div class="space-y-2">
+                            <p class="text-lg md:text-xl font-medium">AfterSolves</p>
+                            <p>Website: <a href="https://aftersolves.com" class="underline hover:text-orange-600 transition-colors">https://aftersolves.com</a></p>
+                            <p>Email: <a href="mailto:support@aftersolves.com" class="underline hover:text-orange-600 transition-colors">support@aftersolves.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="/legal" data-link="/legal" class="inline-flex items-center gap-2 text-sm md:text-base text-orange-500 hover:text-orange-600 transition-colors">
+                            <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Legal & Policies
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer & Newsletter Section -->
+    <footer class="bg-yellow-100 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 rounded-t-[1.5rem] md:rounded-t-[3rem] mt-8 md:mt-12 px-4 py-12 md:px-12 md:py-24 border-t border-yellow-200 dark:border-neutral-700 transition-colors">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 md:gap-12 border-b border-yellow-200 dark:border-neutral-700 pb-10 md:pb-16">
+                <h2 class="text-xl md:text-5xl font-normal tracking-tight max-w-2xl leading-tight text-neutral-900 dark:text-white">
+                    Define your product scope or schedule a technical consultation with our lead architect to get started.
+                </h2>
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 md:gap-6 w-full lg:w-auto">
+                    <span class="text-sm md:text-lg text-neutral-500 dark:text-neutral-400 font-normal whitespace-nowrap hidden sm:block">Connect with us</span>
+                    <div class="flex gap-3 w-full sm:w-auto">
+                        <a href="https://instagram.com/aftersolves" target="_blank" aria-label="Instagram" class="flex-1 sm:flex-none border border-yellow-300 dark:border-neutral-600 bg-white dark:bg-neutral-900 hover:bg-yellow-400 hover:border-yellow-400 dark:hover:bg-yellow-400 dark:hover:text-neutral-900 rounded-full p-3 md:p-4 flex items-center justify-center transition-all shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                               <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/aftersolves" target="_blank" aria-label="X" class="flex-1 sm:flex-none border border-yellow-300 dark:border-neutral-600 bg-white dark:bg-neutral-900 hover:bg-yellow-400 hover:border-yellow-400 dark:hover:bg-yellow-400 dark:hover:text-neutral-900 rounded-full p-3 md:p-4 flex items-center justify-center transition-all shadow-sm">
+                            <svg class="w-6 h-6 md:w-7 md:h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://tiktok.com/@aftersolves" target="_blank" aria-label="TikTok" class="flex-1 sm:flex-none border border-yellow-300 dark:border-neutral-600 bg-white dark:bg-neutral-900 hover:bg-yellow-400 hover:border-yellow-400 dark:hover:bg-yellow-400 dark:hover:text-neutral-900 rounded-full p-3 md:p-4 flex items-center justify-center transition-all shadow-sm">
+                            <svg class="w-6 h-6 md:w-7 md:h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 md:gap-12 py-10 md:py-16">
+                <div class="col-span-2 lg:col-span-1 flex flex-col gap-4">
+                    <span class="text-sm md:text-lg text-orange-600 dark:text-orange-400 font-normal mb-2 uppercase tracking-wider">Studio</span>
+                    <a href="/about" data-link="/about" class="text-sm md:text-xl font-normal text-neutral-600 dark:text-neutral-400 hover:text-orange-500 transition-colors">About us</a>
+                    <a href="/careers" data-link="/careers" class="text-sm md:text-xl font-normal text-neutral-600 dark:text-neutral-400 hover:text-orange-500 transition-colors">Careers</a>
+                    <a href="/contact" data-link="/contact" class="text-sm md:text-xl font-normal text-neutral-600 dark:text-neutral-400 hover:text-orange-500 transition-colors">Contact</a>
+                </div>
+                <div class="col-span-2 lg:col-span-1 flex flex-col gap-4">
+                    <span class="text-sm md:text-lg text-orange-600 dark:text-orange-400 font-normal mb-2 uppercase tracking-wider">Services</span>
+                    <a href="/services" data-link="/services" class="text-sm md:text-xl font-normal text-neutral-600 dark:text-neutral-400 hover:text-orange-500 transition-colors">Services</a>
+                    <a href="/saas-dev" data-link="/saas-dev" class="text-sm md:text-xl font-normal text-neutral-600 dark:text-neutral-400 hover:text-orange-500 transition-colors">SaaS Development</a>
+                    <a href="/ai-systems" data-link="/ai-systems" class="text-sm md:text-xl font-normal text-neutral-600 dark:text-neutral-400 hover:text-orange-500 transition-colors">AI Systems</a>
+                    <a href="/ui-ux/design" data-link="/ui-ux/design" class="text-sm md:text-xl font-normal text-neutral-600 dark:text-neutral-400 hover:text-orange-500 transition-colors">UI/UX Design</a>
+                </div>
+                 <div class="col-span-2 lg:col-span-1 flex flex-col gap-4">
+                    <span class="text-sm md:text-lg text-orange-600 dark:text-orange-400 font-normal mb-2 uppercase tracking-wider">Resources</span>
+                    <a href="/resources" data-link="/resources" class="text-sm md:text-xl font-normal text-neutral-600 dark:text-neutral-400 hover:text-orange-500 transition-colors">Resources</a>
+                    <a href="/case-studies" data-link="/case-studies" class="text-sm md:text-xl font-normal text-neutral-600 dark:text-neutral-400 hover:text-orange-500 transition-colors">Case Studies</a>
+                    <a href="/ai-tools" data-link="/ai-tools" class="text-sm md:text-xl font-normal text-neutral-600 dark:text-neutral-400 hover:text-orange-500 transition-colors">Integration Tools</a>
+                    <a href="/partnership" data-link="/partnership" class="text-sm md:text-xl font-normal text-neutral-600 dark:text-neutral-400 hover:text-orange-500 transition-colors">Partners</a>
+                    <a href="/leaderships" data-link="/leaderships" class="text-sm md:text-xl font-normal text-neutral-600 dark:text-neutral-400 hover:text-orange-500 transition-colors">Our People</a>
+                </div>
+                <div class="col-span-2 lg:col-span-1 flex flex-col gap-4">
+                    <span class="text-sm md:text-lg text-orange-600 dark:text-orange-400 font-normal mb-2 uppercase tracking-wider">Legal</span>
+                    <a href="/privacy" data-link="/privacy" class="text-sm md:text-xl font-normal text-neutral-600 dark:text-neutral-400 hover:text-orange-500 transition-colors">Privacy Policy</a>
+                    <a href="/terms" data-link="/terms" class="text-sm md:text-xl font-normal text-neutral-600 dark:text-neutral-400 hover:text-orange-500 transition-colors">Terms & Conditions</a>
+                    <a href="/refund" data-link="/refund" class="text-sm md:text-xl font-normal text-neutral-600 dark:text-neutral-400 hover:text-orange-500 transition-colors">Refund Policy</a>
+                    <a href="/payment" data-link="/payment" class="text-sm md:text-xl font-normal text-neutral-600 dark:text-neutral-400 hover:text-orange-500 transition-colors">Payment Policy</a>
+                </div>
+                <div class="col-span-2 lg:col-span-2 flex flex-col gap-4">
+                    <span class="text-sm md:text-lg text-orange-600 dark:text-orange-400 font-normal mb-2 uppercase tracking-wider">Newsletter</span>
+                    <div id="newsletter-wrapper">
+                        <div id="newsletter-form-container" class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 bg-white dark:bg-neutral-900 border border-yellow-300 dark:border-neutral-600 rounded-2xl sm:rounded-full p-2 focus-within:border-orange-400 transition-colors shadow-sm">
+                            <input type="email" id="newsletter-email" placeholder="Email address" class="bg-transparent border-none outline-none text-sm md:text-xl text-neutral-800 dark:text-white px-4 md:px-6 w-full placeholder:text-neutral-400 dark:placeholder:text-neutral-500 py-2 sm:py-0">
+                            <button id="newsletter-submit" class="bg-neutral-800 dark:bg-yellow-400 text-white dark:text-neutral-900 hover:bg-neutral-700 dark:hover:bg-yellow-300 rounded-full px-5 py-2.5 md:px-8 md:py-4 text-sm md:text-lg font-normal transition-colors shadow-md whitespace-nowrap flex-shrink-0">
+                                Subscribe
+                            </button>
+                        </div>
+                        <div id="newsletter-success" class="hidden text-center py-4">
+                            <div class="w-16 h-16 mx-auto bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mb-4 animate-scaleIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500 feather feather-check-circle">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline class="check-path" points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                            </div>
+                            <h3 class="text-lg md:text-xl font-normal text-neutral-800 dark:text-white mb-2 animate-fadeInUp">Successfully Subscribed!</h3>
+                            <p class="text-sm text-neutral-500 dark:text-neutral-400 animate-fadeInUp">Thank you for joining our newsletter.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-yellow-200 dark:border-neutral-700 text-sm md:text-lg text-neutral-500 dark:text-neutral-400 font-normal gap-4">
+                <p>© <span id="current-year"></span> AfterSolves.</p>
+                <div class="flex gap-6 md:gap-8">
+                    <a href="/privacy" data-link="/privacy" class="hover:text-neutral-800 dark:hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="/terms" data-link="/terms" class="hover:text-neutral-800 dark:hover:text-white transition-colors">Terms</a>
+                    <a href="/legal" data-link="/legal" class="hover:text-neutral-800 dark:hover:text-white transition-colors">Legal Hub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== Custom Calendar Overlay ===== -->
+    <div id="calendar-overlay" class="hidden fixed inset-0 z-[100] bg-black/40 backdrop-blur-sm flex items-center justify-center p-4" role="dialog" aria-modal="true">
+        <div id="calendar-panel" class="bg-white dark:bg-neutral-800 rounded-2xl shadow-2xl p-5 w-full max-w-sm border border-yellow-200 dark:border-neutral-700">
+            <!-- Calendar content rendered by JS -->
+        </div>
+    </div>
+
+    <!-- ===== Custom Notification Container ===== -->
+    <div id="notification-container" class="fixed top-20 right-4 left-4 sm:left-auto sm:top-4 sm:max-w-sm z-[200] flex flex-col gap-3 pointer-events-none"></div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    
+    <!-- Dynamic Year Script -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+<script>
+    // ===== Register Service Worker for Offline Support =====
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js').then((registration) => {
+                console.log('SW registered:', registration.scope);
+            }).catch((error) => {
+                console.log('SW registration failed:', error);
+            });
+        });
+    }
+</script>
+
+</body>
+</html>
